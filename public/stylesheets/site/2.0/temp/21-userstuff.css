@@ -2,18 +2,18 @@
 
 .userstuff {
     word-wrap: break-word;
-    line-height: 1.5;
+    line-height: 1.5; /* OLD _px -> NEW  */
 }
 
 .userstuff p, .userstuff details {
-  margin: 1.286em auto; /* px values probably: 18px */
+  margin: 1.286em auto; /* OLD 18px -> NEW  */
   padding: 0;
 }
 
 /*lists */
 
 .userstuff dl {
-  margin: 1.5em 0; /* px values probably: 21px */
+  margin: 1.5em 0; /* OLD 21px -> NEW  */
   border: 0;
 }
 
@@ -29,9 +29,9 @@
 
 .userstuff dd {
   display: block;
-  margin-block-start: 1.25em; /* px values probably: 17.5px */
-  margin-block-end: 1.25em; /* px values probably: 17.5px */
-  margin-inline-start: 3em; /* px values probably: 42px */
+  margin-block-start: 1.25em; /* OLD 17.5px -> NEW  */
+  margin-block-end: 1.25em; /* OLD 17.5px -> NEW  */
+  margin-inline-start: 3em; /* OLD 42px -> NEW  */
 }
 
 .userstuff dd p {
@@ -40,8 +40,8 @@
 }
 
 .userstuff ul {
-  margin: 1.125em auto; /* px values probably: 15.75px */
-  padding: 0 1em; /* px values probably: 14px */
+  margin: 1.125em auto; /* OLD 15.75px -> NEW  */
+  padding: 0 1em; /* OLD 14px -> NEW  */
 }
 
 .userstuff ul li { 
@@ -52,23 +52,23 @@
   font-weight: normal;
   display: list-item;
   list-style-type: disc;
-  margin-block-start: 0.75em; /* px values probably: 10.5px */
+  margin-block-start: 0.75em; /* OLD 10.5px -> NEW  */
   margin-inline-end: 0;
-  margin-block-end: 0.75em; /* px values probably: 10.5px */
-  margin-inline-start: 1.75em; /* px values probably: 24.5px */
+  margin-block-end: 0.75em; /* OLD 10.5px -> NEW  */
+  margin-inline-start: 1.75em; /* OLD 24.5px -> NEW  */
 }
 
 .userstuff ol {
-  margin: 0.75em auto; /* px values probably: 10.5px */
-  padding: 0 1.5em; /* px values probably: 21px */
+  margin: 0.75em auto; /* OLD 10.5px -> NEW  */
+  padding: 0 1.5em; /* OLD 21px -> NEW  */
 }
 
 .userstuff ol li {
   list-style-type: decimal;
-  margin-block-start: 0.75em; /* px values probably: 10.5px */
+  margin-block-start: 0.75em; /* OLD 10.5px -> NEW  */
   margin-inline-end: 0;
-  margin-block-end: 0.75em; /* px values probably: 10.5px */
-  margin-inline-start: 1.75em; /* px values probably: 24.5px */
+  margin-block-end: 0.75em; /* OLD 10.5px -> NEW  */
+  margin-inline-start: 1.75em; /* OLD 24.5px -> NEW  */
 }
 
 .userstuff ol li ol li {
@@ -87,14 +87,14 @@
 
 .userstuff h2 {
   color: #333;
-  margin: 1.5em 0; /* px values probably: 21px */
+  margin: 1.5em 0; /* OLD 21px -> NEW  */
   display: block;
 }
 
 .userstuff h3 {
   font-weight: 500;
-  padding: 0.125em; /* px values probably: 1.75px */
-  border-bottom: 0.25em double #333; /* px values probably: 3.5px */
+  padding: 0.125em; /* OLD 1.75px -> NEW  */
+  border-bottom: 0.25em double #333; /* OLD 3.5px -> NEW  */
 }
 
 .userstuff h4 {
@@ -103,11 +103,11 @@
 
 .userstuff h5 {
   font-weight: 600;
-  font-size: 1em; /* px values probably: 14px */
+  font-size: 1em; /* OLD 14px -> NEW  */
 }
 
 .userstuff h6 {
-  font-size: 0.975em; /* px values probably: 13.65px */
+  font-size: 0.975em; /* OLD 13.65px -> NEW  */
   border-bottom: 1px solid;
 }
 
@@ -120,7 +120,7 @@
 /*tables */
 
 .userstuff caption {
-  font-size: 1em; /* px values probably: 14px */
+  font-size: 1em; /* OLD 14px -> NEW  */
   height: auto;
   width: auto;
     opacity: 1;
@@ -134,20 +134,20 @@
 /* quotes and stresses */
 
 .userstuff blockquote {
-  line-height: 1.5;
-  margin-inline-start: 1.5em; /* px values probably: 21px */
-  padding: 0.75em; /* px values probably: 10.5px */
+  line-height: 1.5; /* OLD _px -> NEW  */
+  margin-inline-start: 1.5em; /* OLD 21px -> NEW  */
+  padding: 0.75em; /* OLD 10.5px -> NEW  */
   border-inline-start: 2px solid #999;
 }
 
 .userstuff blockquote blockquote {
-  padding: 0.25em; /* px values probably: 3.5px */
+  padding: 0.25em; /* OLD 3.5px -> NEW  */
   border: 0;
 }
 
 .userstuff hr {
   width: 33%;
-  margin: 0.875em auto 1.2525em auto; /* px values probably: 12.25px, 17.54px */
+  margin: 0.875em auto 1.2525em auto; /* OLD 12.25px, 17.54px -> NEW  */
   border: 1px solid;
 }
 
@@ -167,10 +167,10 @@
 /* WORK MARGINS */
 
 #workskin {
-  font-size: 1.08em; /* px values probably: 15.12px */
+  font-size: 1.08em; /* OLD 15.12px -> NEW  */
   margin: auto;
-  padding: 0 0.25em; /* px values probably: 3.5px */
-  max-width: 72em; /* px values probably: 1008px */
+  padding: 0 0.25em; /* OLD 3.5px -> NEW  */
+  max-width: 72em; /* OLD 1008px -> NEW  */
   overflow-x: auto;
   overflow-y: hidden;
   position: relative;
@@ -183,21 +183,21 @@
 /* contexts */
 
 .bookmark .user .userstuff {
-  line-height: 1.5;
+  line-height: 1.5; /* OLD _px -> NEW  */
 }
 
 .bookmark .user .userstuff blockquote {
-  margin-bottom: 1.286em; /* px values probably: 18px */
+  margin-bottom: 1.286em; /* OLD 18px -> NEW  */
 }
 
 .faq .userstuff dd {
-  margin-block-start: 0.75em; /* px values probably: 10.5px */
-  margin-block-end: 0.75em; /* px values probably: 10.5px */
-  margin-inline-start: 1.75em; /* px values probably: 24.5px */
+  margin-block-start: 0.75em; /* OLD 10.5px -> NEW  */
+  margin-block-end: 0.75em; /* OLD 10.5px -> NEW  */
+  margin-inline-start: 1.75em; /* OLD 24.5px -> NEW  */
 }
 
 .faq .userstuff dl {
-  margin: 0.75em 0; /* px values probably: 10.5px */
+  margin: 0.75em 0; /* OLD 10.5px -> NEW  */
 }
 
 /*END== */

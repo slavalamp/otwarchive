@@ -6,7 +6,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   outline: 0;
   font-weight: inherit;
   font-style: inherit;
-  font-size: 100%; /* px values probably: 14px */
+  font-size: 100%; /* OLD 14px -> NEW  */
   font-family: inherit;
   vertical-align: baseline;
   list-style: none;
@@ -19,7 +19,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 /* The global rules for normal elements */
 
 body {
-  font: 100%/1.125 'Lucida Grande', 'Lucida Sans Unicode', Verdana, Helvetica, sans-serif, 'GNU Unifont'; /* px values probably: 14px */
+  font: 100%/1.125 'Lucida Grande', 'Lucida Sans Unicode', Verdana, Helvetica, sans-serif, 'GNU Unifont'; /* OLD 14px, _px -> NEW  */
 }
 
 a, a:link, a:visited:hover {
@@ -57,47 +57,47 @@ h1, h2, h3, h4, h5, h6, .heading {
 }
 
 h1 {
-  font-size: 2.5em; /* px values probably: 35px */
-  line-height: 1;
-  margin: 0.5em 0; /* px values probably: 7px */
+  font-size: 2.5em; /* OLD 35px -> NEW 40px */
+  line-height: 1; /* OLD 35px -> NEW 40px */
+  margin: 0.5em 0; /* OLD 7px -> NEW  */
 }
 
 h2 {
-  font-size: 2.143em; /* px values probably: 30px */
-  line-height: 1;
-  margin: 0.429em 0; /* px values probably: 6.01px */
+  font-size: 2.143em; /* OLD 30px -> NEW  */
+  line-height: 1; /* OLD 30px -> NEW  */
+  margin: 0.429em 0; /* OLD 6.01px -> NEW  */
   display: inline;
 }
 
-/*24px skipped: font-size: 1.714em; line-height: 1; margin: 0.429em 0*/ /* px values probably: 24px, 6.01px */
+/*24px skipped: font-size: 1.714em; line-height: 1; margin: 0.429em 0*/ /* OLD 24px, 6.01px -> NEW  */
 
 h3 {
-  font-size: 1.286em; /* px values probably: 18px */
-  line-height: 1;
-  margin: 0.5375em 0; /* px values probably: 7.53px */
+  font-size: 1.286em; /* OLD 18px -> NEW  */
+  line-height: 1; /* OLD 18px -> NEW  */
+  margin: 0.5375em 0; /* OLD 7.53px -> NEW  */
 }
 
 h4 {
-  font-size: 1.143em; /* px values probably: 16px */
-  line-height: 1.125;
-  margin: 0.5em 0; /* px values probably: 7px */
+  font-size: 1.143em; /* OLD 16px -> NEW  */
+  line-height: 1.125; /* OLD 18px -> NEW 24px*/
+  margin: 0.5em 0; /* OLD 7px -> NEW  */
 }
 
 h5 {
-  font-size: 1em; /* px values probably: 14px */
-  line-height: 1.286;
-  margin: 0.643em 0; /* px values probably: 9px */
+  font-size: 1em; /* OLD 14px -> NEW  */
+  line-height: 1.286; /* OLD 16px -> NEW  */
+  margin: 0.643em 0; /* OLD 9px -> NEW  */
 }
 
 h6 {
-  font-size: 0.875em; /* px values probably: 12.25px */
+  font-size: 0.875em; /* OLD 12.25px -> NEW  */
   font-weight: 900;
-  line-height: 1.5;
-  margin: 1.5em 0; /* px values probably: 21px */
+  line-height: 1.5; /* OLD _px -> NEW  */
+  margin: 1.5em 0; /* OLD 21px -> NEW  */
 }
 
 p, li, dd, hr {
-  margin: 0.643em 0; /* px values probably: 9px */
+  margin: 0.643em 0; /* OLD 9px -> NEW  */
 }
 
 hr {
@@ -115,8 +115,8 @@ hr {
 }
 
 blockquote, pre {
-  font: 1em 'Lucida Grande', 'Lucida Sans Unicode', Verdana, Helvetica, sans-serif; /* px values probably: 14px */
-  margin: 0.643em; /* px values probably: 9px */
+  font: 1em 'Lucida Grande', 'Lucida Sans Unicode', Verdana, Helvetica, sans-serif; /* OLD 14px -> NEW  */
+  margin: 0.643em; /* OLD 9px -> NEW  */
 }
 
 blockquote p:first-child {
@@ -128,7 +128,7 @@ blockquote p:last-child {
 }
 
 kbd, tt, code, var, pre, samp {
-  font: normal 0.857em 'Monaco', 'Consolas', Courier, monospace; /* px values probably: 12px */
+  font: normal 0.857em 'Monaco', 'Consolas', Courier, monospace; /* OLD 12px -> NEW  */
   margin: auto;
 }
 
@@ -161,25 +161,25 @@ dfn, abbr, acronym {
 }
 
 big {
-  font-size: 114%; /* px values probably: 15.96px */
+  font-size: 114%; /* OLD 15.96px -> NEW  */
 }
 
 small, sub, sup {
-  font-size: 87.5%; /* px values probably: 12.25px */
+  font-size: 87.5%; /* OLD 12.25px -> NEW  */
 }
 
 small small small small {
-  font-size: 100%; /* px values probably: 14px */
+  font-size: 100%; /* OLD 14px -> NEW  */
 }
 
 sub {
   vertical-align: sub;
-  line-height: 0;
+  line-height: 0; /* OLD _px -> NEW  */
 }
 
 sup {
   vertical-align: super;
-  line-height: 0;
+  line-height: 0; /* OLD _px -> NEW  */
 }
 
 /*http://otwcode.github.com/docs/front_end_coding/accessible-tables*/
@@ -203,7 +203,7 @@ caption {
 
 thead, tfoot {
   border-bottom: 2px solid #bbb;
-  padding: 0.643em; /* px values probably: 9px */
+  padding: 0.643em; /* OLD 9px -> NEW  */
   vertical-align: top;
 }
 
@@ -212,7 +212,7 @@ tfoot td {
 }
 
 td th {
-  padding-right: 1em; /* px values probably: 14px */
+  padding-right: 1em; /* OLD 14px -> NEW  */
 }
 
 tbody tr {
@@ -220,7 +220,7 @@ tbody tr {
 }
 
 td {
-  padding: 0.25em; /* px values probably: 3.5px */
+  padding: 0.25em; /* OLD 3.5px -> NEW  */
   vertical-align: top;
 }
 
@@ -236,7 +236,7 @@ thead td {
 th, tr:hover, col.name {
   background: #fff;
   border: 1px solid #bbb;
-  padding: 0.15em 0.5em 0.25em; /* px values probably: 2.1px, 7px, 3.5px */
+  padding: 0.15em 0.5em 0.25em; /* OLD 2.1px, 7px, 3.5px -> NEW  */
   vertical-align: top;
 }
 

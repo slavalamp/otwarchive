@@ -7,7 +7,7 @@ http://otwcode.github.com/docs/front_end_coding/patterns/listbox
   background: #ddd;
   border: 2px solid #ccc;
   padding: 0;
-  margin: 0.643em auto; /* px values probably: 9px */
+  margin: 0.643em auto; /* OLD 9px -> NEW  */
   overflow: hidden;
     box-shadow: 0 0 0 1px #fff;
 }
@@ -23,12 +23,12 @@ http://otwcode.github.com/docs/front_end_coding/patterns/listbox
 .listbox > .heading, .listbox .heading a:visited {
   margin: 0;
   color: #2a2a2a;
-  padding: 0.25em; /* px values probably: 3.5px */
+  padding: 0.25em; /* OLD 3.5px -> NEW  */
 }
 
 .listbox .index {
   width: auto;
-  padding: 0.643em; /* px values probably: 9px */
+  padding: 0.643em; /* OLD 9px -> NEW  */
   margin: 0;
   float: none;
   clear: right;
@@ -59,7 +59,7 @@ http://otwcode.github.com/docs/front_end_coding/patterns/listbox
   width: 45%;
   float: left;
   clear: none;
-  margin-right: 1.5em; /* px values probably: 21px */
+  margin-right: 1.5em; /* OLD 21px -> NEW  */
 }
 
 /*Contexts */
@@ -80,7 +80,7 @@ http://otwcode.github.com/docs/front_end_coding/patterns/listbox
 }
 
 .listbox .many {
-  max-height: 12em; /* px values probably: 168px */
+  max-height: 12em; /* OLD 168px -> NEW  */
 }
 
 /*END== */

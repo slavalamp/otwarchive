@@ -7,7 +7,7 @@ http://otwcode.github.com/docs/front_end_coding/patterns/supertypes
   border-top: 2px solid;
   color: #fff;
   float: left;
-  font-size: 0.75em; /* px values probably: 10.5px */
+  font-size: 0.75em; /* OLD 10.5px -> NEW  */
   position: relative;
   padding: 0;
   width: 100%;
@@ -16,8 +16,8 @@ http://otwcode.github.com/docs/front_end_coding/patterns/supertypes
 #footer ul {
   border: 0;
   clear: both;
-  margin: 1.5em 0; /* px values probably: 21px */
-  padding: 1em 5%; /* px values probably: 14px */
+  margin: 1.5em 0; /* OLD 21px -> NEW  */
+  padding: 1em 5%; /* OLD 14px -> NEW  */
   float: left;
   text-align: left;
   width: 90%;
@@ -44,7 +44,7 @@ http://otwcode.github.com/docs/front_end_coding/patterns/supertypes
   color: #fff;
   display: inline;
   border-bottom: 1px solid;
-  line-height: 1.5;
+  line-height: 1.5; /* OLD _px -> NEW  */
   white-space: normal;
 }
 

@@ -3,10 +3,10 @@ http://otwcode.github.com/docs/front_end_coding/patterns/supertypes
 */
 
 #main {
-  font-size: 0.875em; /* px values probably: 12.25px */
-  line-height: 1.286;
+  font-size: 0.875em; /* OLD 12.25px -> NEW  */
+  line-height: 1.286; /* OLD _px -> NEW  */
   margin: auto;
-  padding: 0.5em 2.5em 3.5em; /* px values probably: 7px, 35px, 49px */
+  padding: 0.5em 2.5em 3.5em; /* OLD 7px, 35px, 49px -> NEW  */
   position: relative;
   min-height: 450px;
 }
@@ -21,12 +21,12 @@ http://otwcode.github.com/docs/front_end_coding/patterns/supertypes
 }
 
 #main.dashboard {
-  padding-left: 2em; /* px values probably: 28px */
-  margin: 0.5em auto 1em 14em; /* px values probably: 7px, 14px, 196px */
+  padding-left: 2em; /* OLD 28px -> NEW  */
+  margin: 0.5em auto 1em 14em; /* OLD 7px, 14px, 196px -> NEW  */
 }
 
 #main.home {
-  padding: 2em 7.5em 3.5em; /* px values probably: 28px, 105px, 49px */
+  padding: 2em 7.5em 3.5em; /* OLD 28px, 105px, 49px -> NEW  */
 }
 
 #main.errors {
@@ -42,7 +42,7 @@ http://otwcode.github.com/docs/front_end_coding/patterns/supertypes
 }
 
 #main.session {
-  background: url("/images/logo.png") 0.5em 3em no-repeat; /* px values probably: 7px, 42px */
+  background: url("/images/logo.png") 0.5em 3em no-repeat; /* OLD 7px, 42px -> NEW  */
 }
 
 #main.errors h2 {

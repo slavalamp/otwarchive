@@ -18,16 +18,21 @@ fs.readdir('./', (err, files) => {
             const newFile = []
             lines.forEach((line) => {
                 const comments = []
-                const matches = Array.from(line.matchAll(/font/.test(line) ? /((\d+\.)?\d+)em|((\d+\.)?\d+)%/g : /((\d+\.)?\d+)em/g))
+                const matches = Array.from(line.matchAll((()=>{
+                    if (/font/.test(line)) return /((\d+\.)?\d+)em|((\d+\.)?\d+)%|\/\b((\d+\.)?\d+)\b/g
+                    if (/line-height/.test(line)) return /(ъ)(ъ)(ъ)(ъ)|\b((\d+\.)?\d+)\b/g
+                    return  /((\d+\.)?\d+)em/g
+                })()))
                 if (!matches.length) {
                     newFile.push(line)
                     return
                 }
                 matches.forEach(match => {
-                    const px = Math.round((match[3] ? Number(match[3]) / 100 * 14 : Number(match[1]) * 14)*100)/100
-                    comments.push(`${px}px`)
+                    if (match[1]) comments.push(Math.round(Number(match[1]) * 14 * 100) / 100)
+                    if (match[3]) comments.push(Math.round(Number(match[3]) * 14) / 100)
+                    if (match[5]) comments.push('_')
                 })
-                newFile.push(`${line} /* px values probably: ${comments.join(', ')} */`)
+                newFile.push(`${line} /* OLD ${comments.join('px, ')}px -> NEW  */`)
             })
             fs.writeFile(`./temp/${file}`, newFile.join('\n'), (err) => {
                 if (err) throw err;

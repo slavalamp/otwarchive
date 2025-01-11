@@ -15,7 +15,7 @@ System messages use the following colours:
 }
 
 .footnote {
-  font-size: 0.75em; /* px values probably: 10.5px */
+  font-size: 0.75em; /* OLD 10.5px -> NEW  */
   float: right;
 }
 
@@ -24,19 +24,19 @@ System messages use the following colours:
 }
 
 div.error {
-  margin: 0.643em auto; /* px values probably: 9px */
-  padding: 0.25em 0.375em; /* px values probably: 3.5px, 5.25px */
-    border-radius: 0.25em; /* px values probably: 3.5px */
+  margin: 0.643em auto; /* OLD 9px -> NEW  */
+  padding: 0.25em 0.375em; /* OLD 3.5px, 5.25px -> NEW  */
+    border-radius: 0.25em; /* OLD 3.5px -> NEW  */
 }
 
 .notice, .comment_notice, .kudos_notice, ul.notes, .caution, .error, .comment_error, .kudos_error, .alert.flash {
   background: #d1e1ef;
   border: 1px solid #c2d2df;
-  margin: 0.643em auto; /* px values probably: 9px */
-  padding: 0.25em 0.375em; /* px values probably: 3.5px, 5.25px */
+  margin: 0.643em auto; /* OLD 9px -> NEW  */
+  padding: 0.25em 0.375em; /* OLD 3.5px, 5.25px -> NEW  */
   clear: right;
     box-shadow: inset 1px 1px 2px;
-    border-radius: 0.25em; /* px values probably: 3.5px */
+    border-radius: 0.25em; /* OLD 3.5px -> NEW  */
     word-wrap: break-word;
 }
 
@@ -62,18 +62,18 @@ form .notice, form ul.notes {
 
 .notice p {
   margin: 0;
-  padding: 0.643em; /* px values probably: 9px */
+  padding: 0.643em; /* OLD 9px -> NEW  */
 }
 
 ul.notes, .error ul, .notice ul, .caution ul, .alert.flash ul {
   position: static;
-  margin: auto 0.643em; /* px values probably: 9px */
-  padding: 0.25em 2.5em; /* px values probably: 3.5px, 35px */
+  margin: auto 0.643em; /* OLD 9px -> NEW  */
+  padding: 0.25em 2.5em; /* OLD 3.5px, 35px -> NEW  */
 }
 
 ul.notes li, .error ul li, .notice ul li, .caution ul li, .alert.flash ul li {
   list-style-type: disc;
-  padding-left: 1.5em; /* px values probably: 21px */
+  padding-left: 1.5em; /* OLD 21px -> NEW  */
 }
 
 dt span.error, dd span.error {
@@ -106,29 +106,29 @@ alert => yellow-orange to alert users of problems or planned downtime
   background: #d1e1ef;
   border: 1px solid #c2d2df;
   color: #333;
-  margin: 0 2em; /* px values probably: 28px */
-  padding: 0.375em 0.75em; /* px values probably: 5.25px, 10.5px */
+  margin: 0 2em; /* OLD 28px -> NEW  */
+  padding: 0.375em 0.75em; /* OLD 5.25px, 10.5px -> NEW  */
   text-align: left;
 }
 
 .announcement .userstuff p {
-  margin: 0.375em auto; /* px values probably: 5.25px */
+  margin: 0.375em auto; /* OLD 5.25px -> NEW  */
 }
 
 .announcement p.submit {
-  bottom: -0.25em; /* px values probably: 3.5px */
+  bottom: -0.25em; /* OLD 3.5px -> NEW  */
   margin: 0;
   padding: 0;
   position: absolute;
-  right: 1em; /* px values probably: 14px */
+  right: 1em; /* OLD 14px -> NEW  */
 }
 
 .announcement input[type="submit"], .announcement .action {
   background: #fff none;
   border: 1px solid #bbb;
-  font-size: 0.875em; /* px values probably: 12.25px */
-  padding: 0.25em 0.5em; /* px values probably: 3.5px, 7px */
-    border-radius: 2em; /* px values probably: 28px */
+  font-size: 0.875em; /* OLD 12.25px -> NEW  */
+  padding: 0.25em 0.5em; /* OLD 3.5px, 7px -> NEW  */
+    border-radius: 2em; /* OLD 28px -> NEW  */
 }
 
 .announcement h1, .announcement h2, .announcement h3, .announcement h4, .announcement h5, .announcement h6 {
@@ -163,7 +163,7 @@ alert => yellow-orange to alert users of problems or planned downtime
 progress indicator colors are set in application.js */
 
 .announcement .thermometer-content {
-  height: 2.6em; /* px values probably: 36.4px */
+  height: 2.6em; /* OLD 36.4px -> NEW  */
   margin: auto;
   width: 50%;
 }
@@ -175,7 +175,7 @@ progress indicator colors are set in application.js */
 .announcement .thermometer .track {
   background: #fff;
   border: 1px solid #aaa;
-  height: 1.25em; /* px values probably: 17.5px */
+  height: 1.25em; /* OLD 17.5px -> NEW  */
   margin: 0 auto;
   position: relative;
     background-image: linear-gradient(to bottom, #fff 0%, #f3f3f3 50%, #ededed 51%, #fff 100%);
@@ -195,18 +195,18 @@ progress indicator colors are set in application.js */
 
 .announcement .thermometer .amount {
   font-weight: 700;
-  line-height: 1.25em; /* px values probably: 17.5px */
+  line-height: 1.25em; /* OLD _px -> NEW  */
   position: absolute;
 }
 
 .announcement .thermometer .goal .amount {
   left: 0;
-  padding-left: 0.25em; /* px values probably: 3.5px */
+  padding-left: 0.25em; /* OLD 3.5px -> NEW  */
   top: 0;
 }
 
 .announcement .thermometer .progress .amount {
-  top: 1.35em; /* px values probably: 18.9px */
+  top: 1.35em; /* OLD 18.9px -> NEW  */
   right: 0;
 }
 
@@ -218,11 +218,11 @@ span.symbol {
   font-family: Georgia, serif;
   border: 1px solid;
   vertical-align: super;
-    border-radius: 0.75em; /* px values probably: 10.5px */
+    border-radius: 0.75em; /* OLD 10.5px -> NEW  */
 }
 
 span.symbol span {
-  padding: 0.425em; /* px values probably: 5.95px */
+  padding: 0.425em; /* OLD 5.95px -> NEW  */
 }
 
 .symbols a, .symbol a {
@@ -249,7 +249,7 @@ a.question {
 }
 
 .heading a.question {
-  font-size: 0.75em; /* px values probably: 10.5px */
+  font-size: 0.75em; /* OLD 10.5px -> NEW  */
 }
 
 /*SYMBOLS KEY (help content) */
@@ -264,8 +264,8 @@ dl#symbols-key dd {
 
 #symbols-key dl {
   border: 1px solid #ddd;
-  margin-bottom: 1.286em; /* px values probably: 18px */
-  padding: 0.15em; /* px values probably: 2.1px */
+  margin-bottom: 1.286em; /* OLD 18px -> NEW  */
+  padding: 0.15em; /* OLD 2.1px -> NEW  */
 }
 
 #symbols-key dl dt img, #bookmark-symbols-key dt img, #symbols-key dl dt, #bookmark-symbols-key dt {

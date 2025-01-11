@@ -4,8 +4,8 @@
     opacity: 1;
   height: auto;
   width: auto;
-  font-size: 100%; /* px values probably: 14px */
-  line-height: 0;
+  font-size: 100%; /* OLD 14px -> NEW  */
+  line-height: 0; /* OLD _px -> NEW  */
   color: black;
 }
 

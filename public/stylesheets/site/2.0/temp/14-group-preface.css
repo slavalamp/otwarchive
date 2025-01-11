@@ -5,15 +5,15 @@ blockquote contents (the user-written notes) are styled in userstuff.css like al
 */
 
 div.preface {
-  margin: 1.5em 3em; /* px values probably: 21px, 42px */
-  padding: 0.643em 0.643em 0; /* px values probably: 9px, 9px */
+  margin: 1.5em 3em; /* OLD 21px, 42px -> NEW  */
+  padding: 0.643em 0.643em 0; /* OLD 9px, 9px -> NEW  */
   float: none;
 }
 
 div.preface .module {
   float: none;
   margin: 0;
-  padding: 0 0 0.643em; /* px values probably: 9px */
+  padding: 0 0 0.643em; /* OLD 9px -> NEW  */
   width: auto;
 }
 
@@ -42,26 +42,26 @@ div.preface .title, div.preface .byline, div.preface .byline a {
 }
 
 div.preface .notes, div.preface .summary, div.preface .series, div.preface .children {
-  min-height: 5em; /* px values probably: 70px */
+  min-height: 5em; /* OLD 70px -> NEW  */
 }
 
 div.preface .series ul, div.preface .children ul {
-  padding: 0 0.643em; /* px values probably: 9px */
+  padding: 0 0.643em; /* OLD 9px -> NEW  */
 }
 
 div.preface .associations {
-  margin-bottom: 1.5em; /* px values probably: 21px */
+  margin-bottom: 1.5em; /* OLD 21px -> NEW  */
 }
 
 div.preface .jump {
-  margin-top: 1.5em; /* px values probably: 21px */
+  margin-top: 1.5em; /* OLD 21px -> NEW  */
 }
 
 /* mod: afterword
 the preface that appears at the bottom of a work page */
 
 div.afterword {
-  margin-bottom: 2.5em; /* px values probably: 35px */
+  margin-bottom: 2.5em; /* OLD 35px -> NEW  */
 }
 
 div.afterword .series h3, div.afterword .children h3 {

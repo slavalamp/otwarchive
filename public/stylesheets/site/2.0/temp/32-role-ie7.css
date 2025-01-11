@@ -26,12 +26,12 @@
 #header #greeting .navigation .dropdown:hover .menu, #header #greeting .open .menu {
   left: auto;
   right: 0;
-  top: 1.715em; /* px values probably: 24.01px */
+  top: 1.715em; /* OLD 24.01px -> NEW  */
 }
 
 #header .navigation .dropdown:hover .menu, #header .open .menu {
   position: absolute;
-  top: 2.13em; /* px values probably: 29.82px */
+  top: 2.13em; /* OLD 29.82px -> NEW  */
   left: 0;
 }
 
@@ -53,7 +53,7 @@ ul#skiplinks, .landmark, .landmark a, .index .heading.landmark {
 /*min-width*/
 
 .dashboard form.filters {
-  min-width: 8em; /* px values probably: 112px */
+  min-width: 8em; /* OLD 112px -> NEW  */
 }
 
 /*margin quirk reset*/

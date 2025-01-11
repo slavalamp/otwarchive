@@ -1,4 +1,4 @@
-/* MEDIA: only screen and (max-width: 62em), handheld ENDMEDIA */ /* px values probably: 868px */
+/* MEDIA: only screen and (max-width: 62em), handheld ENDMEDIA */ /* OLD 868px -> NEW  */
 
 /* 04 region dashboard */
 
@@ -14,8 +14,8 @@
 #dashboard, #dashboard.own {
   border-bottom: 10px solid #900;
   border-top: 10px solid #900;
-  padding: 0.5em 0; /* px values probably: 7px */
-    border-radius: 0.25em; /* px values probably: 3.5px */
+  padding: 0.5em 0; /* OLD 7px -> NEW  */
+    border-radius: 0.25em; /* OLD 3.5px -> NEW  */
 }
 
 #dashboard ul {
@@ -31,17 +31,17 @@
 
 #dashboard a, #dashboard span {
   display: inline-block;
-  margin: 0.25em 0; /* px values probably: 3.5px */
+  margin: 0.25em 0; /* OLD 3.5px -> NEW  */
 }
 
 #dashboard .secondary {
   background: #eee;
-  padding: 0.375em 0 0.625em; /* px values probably: 5.25px, 8.75px */
+  padding: 0.375em 0 0.625em; /* OLD 5.25px, 8.75px -> NEW  */
     box-shadow: inset 2px 2px 5px #bbb;
 }
 
 #dashboard .secondary a {
-  margin: 0.125em 0; /* px values probably: 1.75px */
+  margin: 0.125em 0; /* OLD 1.75px -> NEW  */
 }
 
 #dashboard .landmark {
@@ -67,7 +67,7 @@ form.single input[type="text"] {
 }
 
 form.single input[type="submit"] {
-  margin-top: 0.375em; /* px values probably: 5.25px */
+  margin-top: 0.375em; /* OLD 5.25px -> NEW  */
 }
 
 form.single span.submit {
@@ -112,8 +112,8 @@ form.filters {
 }
 
 form.filters dl {
-  margin-left: 0.25em; /* px values probably: 3.5px */
-  margin-right: 0.25em; /* px values probably: 3.5px */
+  margin-left: 0.25em; /* OLD 3.5px -> NEW  */
+  margin-right: 0.25em; /* OLD 3.5px -> NEW  */
 }
 
 /* 21 userstuff */

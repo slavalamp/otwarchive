@@ -15,15 +15,15 @@ Arguably filter and search could be styled in interactions but I've put them her
 }
 
 .media-index .listbox {
-  min-height: 17.5em;
+  min-height: 17.5em; /* OLD 245px -> NEW  */
 }
 
 /* INTERACTION: SEARCH */
 
 form.search input[type="text"] {
   border-top-color: #999;
-  padding: 0.15em 0.25em;
-    border-radius: 1em;
+  padding: 0.15em 0.25em; /* OLD 2.1px, 3.5px -> NEW  */
+    border-radius: 1em; /* OLD 14px -> NEW  */
 }
 
 .search p, li.search form p {
@@ -33,29 +33,29 @@ form.search input[type="text"] {
 .search [role="tooltip"] {
   background: #ddd;
   border: 1px solid #fff;
-  padding: 0.15em;
+  padding: 0.15em; /* OLD 2.1px -> NEW  */
   position: absolute;
-  left: -999em;
-  font-size: 0.75em;
+  left: -999em; /* OLD 13986px -> NEW  */
+  font-size: 0.75em; /* OLD 10.5px -> NEW  */
   z-index: 1;
 }
 
 .search input:focus + [role="tooltip"] {
-  left: 1em;
-  right: 1em;
-  top: 2.75em;
+  left: 1em; /* OLD 14px -> NEW  */
+  right: 1em; /* OLD 14px -> NEW  */
+  top: 2.75em; /* OLD 38.5px -> NEW  */
 }
 
 li.search fieldset {
   margin: auto;
-  padding: 0.15em;
-  font-size: 87.5%;
+  padding: 0.15em; /* OLD 2.1px -> NEW  */
+  font-size: 87.5%; /* OLD 12.25px -> NEW  */
   overflow: visible;
   width: auto;
 }
 
 .search .tags dd.submit {
-  margin: -3em 0.643em 0;
+  margin: -3em 0.625em 0; /* OLD 42px, 9px -> NEW  */
 }
 
 /* INTERACTION: FILTER */
@@ -97,16 +97,17 @@ form.filters {
 
 .filters .submit input {
   height: 100%;
-  margin: 1em 0;
-  min-height: 1.286em;
+  margin: 1em 0; /* OLD 14px -> NEW k */
+  min-height: 1.5em; /* OLD 18px -> NEW probs 24 */
   padding-left: 0;
   padding-right: 0;
   text-align: center;
   white-space: normal;
 }
 
+/* needs testing - ???? */
 .filters dt.heading {
-  margin-top: 1.929em;
+  margin-top: 1.929em; /* OLD 27.01px -> NEW  */
 }
 
 .filters .expander {
@@ -114,9 +115,9 @@ form.filters {
   border: none;
   color: #2a2a2a;
   height: 100%;
-  min-height: 1.786em; /* default button height plus 0.25 vertical padding */
+  min-height: 1.786em; /* default button height plus 0.25 vertical padding */ /* OLD 25px -> NEW  */
   outline: none;
-  padding: 0.25em 0 0.25em 14px;
+  padding: 0.25em 0 0.25em 14px; /* OLD 3.5px, 3.5px -> NEW  */
   text-align: left;
   white-space: normal;
     border-radius: 0;
@@ -137,13 +138,13 @@ form.filters {
 
 .filters .group dt.search, .filters .range dt {
   border-bottom: none;
-  padding: 0.25em 0;
+  padding: 0.25em 0; /* OLD 3.5px -> NEW  */
 }
 
 .filters .group dt.bookmarker {
   border-top: 1px solid #f3efec;
-  margin-top: 0.643em;
-  padding-top: 0.643em;
+  margin-top: 0.625em; /* OLD 9px -> NEW 10px */
+  padding-top: 0.625em; /* OLD 9px -> NEW 10px */
 }
 
 .filters .more dd.search, .filters .more dt.search, .filters .range dd {
@@ -157,9 +158,9 @@ form.filters {
 .filters .collapsed:after, .filters .expanded:after {
   content: none;
 }
-
+/* needs testing */
 .filters .sort + .heading {
-  margin-top: 1.286em; /* heading top margin minus sort bottom margin */
+  margin-top: 1.286em; /* heading top margin minus sort bottom margin */ /* OLD 18px -> NEW idk */
 }
 
 .filters [type="checkbox"], .filters [type="radio"] {
@@ -178,7 +179,7 @@ form.filters {
 https://browserstrangeness.github.io/css_hacks.html */
 @supports (overflow:-webkit-marquee) and (justify-content:inherit) {
   .filters [type="checkbox"], .filters [type="radio"] {
-    left: -2em;
+    left: -2em; /* OLD 28px -> NEW  */
     position: relative;
   }
 }
@@ -188,7 +189,7 @@ https://browserstrangeness.github.io/css_hacks.html */
   color: #aaa;
   display: inline-block;
   border: 1px solid;
-  margin-right: 0.25em;
+  margin-right: 0.25em; /* OLD 3.5px -> NEW  */
   text-align: center;
     background-image: -moz-linear-gradient(top, #fff 2%, #ddd 95%, #bbb 100%);
     background-image: -webkit-linear-gradient(top, #fff 2%, #ddd 95%, #bbb 100%);
@@ -209,8 +210,8 @@ https://browserstrangeness.github.io/css_hacks.html */
 
 .filters [type="checkbox"] + .indicator:before {
   content: " \2713";
-  padding: 0 0.25em;
-    border-radius: 0.25em;
+  padding: 0 0.25em; /* OLD 3.5px -> NEW  */
+    border-radius: 0.25em; /* OLD 3.5px -> NEW  */
 }
 
 .filters [type="checkbox"]:checked + .indicator:before {
@@ -223,10 +224,10 @@ https://browserstrangeness.github.io/css_hacks.html */
 
 .filters [type="radio"] + .indicator:before {
   content: "";
-  width: 1em;
-  height: 1em;
-  vertical-align: -0.125em;
-    border-radius: 1em;
+  width: 1em; /* OLD 14px -> NEW  */
+  height: 1em; /* OLD 14px -> NEW  */
+  vertical-align: -0.125em; /* OLD 1.75px -> NEW  */
+    border-radius: 1em; /* OLD 14px -> NEW  */
 }
 
 .filters [type="radio"]:checked + .indicator:before {

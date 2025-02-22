@@ -15,7 +15,7 @@ span.replied. span.unreviewed, .actions a, .action {
 }
 
 a.tag {
-  padding-left: 0.25em;
+  padding-left: 0.25em; /* OLD 3.5px -> NEW  */
 }
 
 /* pathing and inheritance*/
@@ -82,12 +82,12 @@ form dd.notes dl {
 }
 
 .admin .module p {
-  margin: 0.643em 1.5em;
+  margin: 0.625em 1.5em; /* OLD 9px, 21px -> NEW  */
 }
 
 span.symbol, span.symbol span {
-  font-size: 90%;
-  padding: 0 0.15em;
+  font-size: 90%; /* OLD 12.6px -> NEW  */
+  padding: 0 0.15em; /* OLD 2.1px -> NEW  */
   vertical-align: middle;
 }
 
@@ -109,7 +109,7 @@ dl.index dd p, dl.index dd .heading {
 
 .heading h3, .heading h4 {
   font-weight: bold;
-  line-height: 1.125;
+  line-height: 1.125; /* OLD _px -> NEW  */
 }
 
 input, select, option, textarea, legend, label, .actions a {

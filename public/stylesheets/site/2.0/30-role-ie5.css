@@ -25,12 +25,12 @@
 #header #greeting .navigation .dropdown:hover .menu, #header #greeting .open .menu {
   left: auto;
   right: 0;
-  top: 1.715em;
+  top: 1.715em; /* OLD 24.01px -> NEW  */
 }
 
 #header .navigation .dropdown:hover .menu, #header .open .menu {
   position: absolute;
-  top: 2.13em;
+  top: 2.13em; /* OLD 29.82px -> NEW  */
   left: 0;
 }
 
@@ -87,7 +87,7 @@ form .meta dt {
   float: left;
   clear: left;
   width: 25%;
-  padding: 0.25em 0.5625em 0 0;
+  padding: 0.25em 0.5625em 0 0; /* OLD 3.5px, 7.88px -> NEW  */
   border-bottom: 1px solid #f3efec;
 }
 
@@ -99,7 +99,7 @@ form .meta dd {
 /*margin/padding quirks */
 
 span.question {
-  font-size: 90%;
+  font-size: 90%; /* OLD 12.6px -> NEW  */
   padding: 0;
   vertical-align: baseline;
 }
@@ -150,11 +150,11 @@ p.kudos {
 }
 
 textarea {
-  height: 12em;
+  height: 12em; /* OLD 168px -> NEW  */
 }
 
 #main media-index li.medium {
-  height: 17.5em;
+  height: 17.5em; /* OLD 245px -> NEW  */
 }
 
 /*baseline*/
@@ -196,17 +196,17 @@ form .preface dd {
 #dashboard {
   width: auto;
   float: none;
-  margin: 1.5em;
-  padding: 0 0.5625em;
+  margin: 1.5em; /* OLD 21px -> NEW  */
+  padding: 0 0.5625em; /* OLD 7.88px -> NEW  */
   overflow: hidden;
 }
 
 #dashboard ul.navigation, #dashboard ul {
   background: #fff;
-  width: 8.5em;
-  height: 12em;
-  padding: 0.5em;
-  margin: 0.25em;
+  width: 8.5em; /* OLD 119px -> NEW  */
+  height: 12em; /* OLD 168px -> NEW  */
+  padding: 0.5em; /* OLD 7px -> NEW  */
+  margin: 0.25em; /* OLD 3.5px -> NEW  */
   float: left;
   text-align: justify;
   border: 2px solid #ddd;
@@ -224,7 +224,7 @@ form .preface dd {
 /*javascript patch for slow-hiding secondary*/
 
 .works-show .secondary {
-  top: 3em;
+  top: 3em; /* OLD 42px -> NEW  */
 }
 
 /*calc*/

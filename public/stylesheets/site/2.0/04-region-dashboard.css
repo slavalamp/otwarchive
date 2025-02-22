@@ -3,9 +3,9 @@ http://otwcode.github.com/docs/front_end_coding/patterns/supertypes
 */
 
 #dashboard {
-  width: 11.25em;
+  width: 11.25em; /* OLD 157.5px -> NEW 180? */
   float: left;
-  padding: 0.5em;
+  padding: 0.5em; /* OLD 7px -> NEW k */
 }
 
 #dashboard li {
@@ -17,8 +17,8 @@ http://otwcode.github.com/docs/front_end_coding/patterns/supertypes
   display: block;
   white-space: normal;
   height: auto;
-  line-height: 2;
-  padding: 0 0.5625em;
+  line-height: 2; /* OLD _px -> NEW k? */
+  padding: 0 0.5625em; /* OLD 7.88px -> NEW 9px */
   margin: 0;
   border: none;
   background: transparent;
@@ -35,7 +35,7 @@ http://otwcode.github.com/docs/front_end_coding/patterns/supertypes
 #dashboard ul {
   float: none;
   display: block;
-  padding: 1.286em 0;
+  padding: 1.5em 0; /* OLD 18px -> NEW 24px???? */
   text-align: right;
   border-top: 2px solid #ddd;
   position: relative;
@@ -54,7 +54,7 @@ http://otwcode.github.com/docs/front_end_coding/patterns/supertypes
   border-top: 15px solid #900;
   border-bottom: 15px solid #900;
     opacity: 1.0;
-    border-radius: 0.25em;
+    border-radius: 0.25em; /* OLD 3.5px -> NEW k */
 }
 
 /*END== */

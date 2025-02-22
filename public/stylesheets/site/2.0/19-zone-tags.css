@@ -41,7 +41,7 @@ dl.nomination {
 }
 
 .nomination dd.autocomplete ul, .nomination dd.autocomplete li {
-  margin-bottom: -0.375em;
+  margin-bottom: -0.375em; /* OLD 5.25px -> NEW  */
 }
 
 dd.autocomplete li.input {

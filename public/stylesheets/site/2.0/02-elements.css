@@ -6,7 +6,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   outline: 0;
   font-weight: inherit;
   font-style: inherit;
-  font-size: 100%;
+  font-size: 100%; /* OLD 14px -> NEW 16 */
   font-family: inherit;
   vertical-align: baseline;
   list-style: none;
@@ -19,7 +19,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 /* The global rules for normal elements */
 
 body {
-  font: 100%/1.125 'Lucida Grande', 'Lucida Sans Unicode', Verdana, Helvetica, sans-serif, 'GNU Unifont';
+  font: 100%/1.5 'Lucida Grande', 'Lucida Sans Unicode', Verdana, Helvetica, sans-serif, 'GNU Unifont'; /* OLD 16px, 1.125 -> NEW 16px, 1.5 */
 }
 
 a, a:link, a:visited:hover {
@@ -57,47 +57,47 @@ h1, h2, h3, h4, h5, h6, .heading {
 }
 
 h1 {
-  font-size: 2.5em;
-  line-height: 1;
-  margin: 0.5em 0;
+  font-size: 2.25em; /* OLD 35px -> NEW 36px */
+  line-height: 1; /* OLD 35px -> NEW 36px */
+  margin: 0.5em 0; /* OLD 17.5px -> NEW 20px */
 }
 
 h2 {
-  font-size: 2.143em;
-  line-height: 1;
-  margin: 0.429em 0;
+  font-size: 2em; /* OLD 30px -> NEW 32px */
+  line-height: 1; /* OLD 30px -> NEW 32px */
+  margin: 0.4375em 0; /* OLD 0.429em (12.87px) -> NEW 14px */
   display: inline;
 }
 
-/*24px skipped: font-size: 1.714em; line-height: 1; margin: 0.429em 0*/
+/* OLD 24px skipped: font-size: 1.714em; line-height: 1; margin: 0.429em 0*/
 
 h3 {
-  font-size: 1.286em;
-  line-height: 1;
-  margin: 0.5375em 0;
+  font-size: 1.5em; /* OLD 18px -> NEW 24px */
+  line-height: 1; /* OLD 18px -> NEW 24px */  /* needs testing - might need bigger? */
+  margin: 0.5em 0; /* OLD 9.675px (0.5375em) -> NEW 12px */
 }
 
 h4 {
-  font-size: 1.143em;
-  line-height: 1.125;
-  margin: 0.5em 0;
+  font-size: 1.125em; /* OLD 16px -> NEW 18px */
+  line-height: 1.25; /* OLD 18px (1.125) -> NEW 22.5px */ /* needs testing - 1.5 probs better? */
+  margin: 0.5em 0; /* OLD 7px -> NEW 9px */
 }
 
 h5 {
-  font-size: 1em;
-  line-height: 1.286;
-  margin: 0.643em 0;
+  font-size: 1em; /* OLD 14px -> NEW 16px */
+  line-height: 1.5; /* OLD 16px -> NEW 1.5 */
+  margin: 0.625em 0; /* OLD 9px -> NEW 10px */
 }
 
 h6 {
-  font-size: 0.875em;
+  font-size: 0.875em; /* OLD 12.25px -> NEW 14px */
   font-weight: 900;
-  line-height: 1.5;
-  margin: 1.5em 0;
+  line-height: 1.5; /* OLD 1.5 -> NEW 1.5 */
+  margin: 1.5em 0; /* OLD 1.5em -> NEW 21px */
 }
 
 p, li, dd, hr {
-  margin: 0.643em 0;
+  margin: 0.625em 0; /* OLD 9px -> NEW 10px */
 }
 
 hr {
@@ -115,8 +115,8 @@ hr {
 }
 
 blockquote, pre {
-  font: 1em 'Lucida Grande', 'Lucida Sans Unicode', Verdana, Helvetica, sans-serif;
-  margin: 0.643em;
+  font: 1em 'Lucida Grande', 'Lucida Sans Unicode', Verdana, Helvetica, sans-serif; /* OLD 14px -> NEW 16px */
+  margin: 0.625em; /* OLD 9px -> NEW 10px */
 }
 
 blockquote p:first-child {
@@ -128,7 +128,7 @@ blockquote p:last-child {
 }
 
 kbd, tt, code, var, pre, samp {
-  font: normal 0.857em 'Monaco', 'Consolas', Courier, monospace;
+  font: normal 0.875em 'Monaco', 'Consolas', Courier, monospace; /* OLD 12px -> NEW 14px */
   margin: auto;
 }
 
@@ -161,15 +161,15 @@ dfn, abbr, acronym {
 }
 
 big {
-  font-size: 114%;
+  font-size: 112.5%; /* OLD 15.96px/114% -> NEW 18px */
 }
 
 small, sub, sup {
-  font-size: 87.5%;
+  font-size: 87.5%; /* OLD 12.25px -> NEW 14px */
 }
 
 small small small small {
-  font-size: 100%;
+  font-size: 100%; /* OLD 14px -> NEW 100% */
 }
 
 sub {
@@ -203,7 +203,7 @@ caption {
 
 thead, tfoot {
   border-bottom: 2px solid #bbb;
-  padding: 0.643em;
+  padding: 0.625em; /* OLD 9px -> NEW 10px */
   vertical-align: top;
 }
 
@@ -212,7 +212,7 @@ tfoot td {
 }
 
 td th {
-  padding-right: 1em;
+  padding-right: 1em; /* OLD 14px -> NEW k */
 }
 
 tbody tr {
@@ -220,7 +220,7 @@ tbody tr {
 }
 
 td {
-  padding: 0.25em;
+  padding: 0.25em; /* OLD 3.5px -> NEW k */
   vertical-align: top;
 }
 
@@ -236,7 +236,7 @@ thead td {
 th, tr:hover, col.name {
   background: #fff;
   border: 1px solid #bbb;
-  padding: 0.15em 0.5em 0.25em;
+  padding: 0.15em 0.5em 0.25em; /* OLD 2.1px, 7px, 3.5px -> NEW k */
   vertical-align: top;
 }
 

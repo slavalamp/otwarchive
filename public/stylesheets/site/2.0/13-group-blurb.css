@@ -21,7 +21,7 @@ li.blurb, .blurb .blurb {
   display: block;
   position: relative;
   clear: left;
-  padding: 0.429em 0.75em;
+  padding: 0.5em 0.75em; /* OLD 6.01px, 10.5px -> NEW 8,12 */
   overflow: visible;
 }
 
@@ -40,13 +40,13 @@ li.blurb:after, .blurb .blurb:after {
 
 .blurb .header {
   min-height: 55px;
-  margin-bottom: 0.375em;
+  margin-bottom: 0.375em; /* OLD 5.25px -> NEW  */
 }
 
 .blurb .header .heading, .blurb .header ul {
   display: block;
   background: transparent;
-  margin: 0.375em 5.25em 0 65px;
+  margin: 0.375em 5.25em 0 65px; /* OLD 5.25px, 73.5px -> NEW  */
 }
 
 .blurb .header img {
@@ -60,11 +60,11 @@ li.blurb:after, .blurb .blurb:after {
 }
 
 .blurb .header p.notice, .blurb ul.series {
-  margin: 1.25em 0 0;
+  margin: 1.25em 0 0; /* OLD 17.5px -> NEW  */
 }
 
 .blurb ul.series {
-  margin-bottom: 0.875em;
+  margin-bottom: 0.875em; /* OLD 12.25px -> NEW  */
 }
 
 .blurb .heading {
@@ -73,7 +73,7 @@ li.blurb:after, .blurb .blurb:after {
 
 .blurb dl.stats {
   float: right;
-  line-height: 1.5;
+  line-height: 1.5; /* OLD _px -> NEW  */
 }
 
 .blurb .fandoms .landmark {
@@ -127,7 +127,7 @@ li.blurb:after, .blurb .blurb:after {
 .blurb span.text {
   height: 0;
   width: 0;
-  font-size: 0.001em;
+  font-size: 0.001em; /* OLD 0.01px -> NEW  */
   color: transparent;
 }
 
@@ -232,7 +232,7 @@ li.blurb:after, .blurb .blurb:after {
 }
 
 .blurb blockquote {
-  margin: 0.643em auto;
+  margin: 0.625em auto; /* OLD 9px -> NEW 10 */
   text-align: justify;
 }
 
@@ -272,7 +272,7 @@ blurbs on the manage collection items pages, mostly reseting styles inherited fr
 */
 
 .item .blurb blockquote, .item dl.stats {
-  margin: 0.643em auto;
+  margin: 0.625em auto; /* OLD 9px -> NEW  */
   padding: 0;
   border: none;
   background: transparent;
@@ -291,9 +291,9 @@ blurbs on the manage collection items pages, mostly reseting styles inherited fr
 
 .bookmark p.status {
   position: absolute;
-  right: 0.25em;
+  right: 0.25em; /* OLD 3.5px -> NEW k */
   width: 60px;
-  margin-top: 0.429em;
+  margin-top: 0.5em; /* OLD 6.01px -> NEW 8 */
   z-index: 1;
 }
 
@@ -311,7 +311,7 @@ blurbs on the manage collection items pages, mostly reseting styles inherited fr
 }
 
 .bookmark span.count {
-  line-height: 1.875em;
+  line-height: 1.875em; /* OLD _px -> NEW  */
   position: absolute;
   top: 0;
   left: 28px;
@@ -338,16 +338,16 @@ blurbs on the manage collection items pages, mostly reseting styles inherited fr
 
 .bookmark .user {
   border: 1px solid #ccc;
-  margin-top: 0.643em;
-  padding: 0.429em 0.75em;
+  margin-top: 0.625em; /* OLD 9px -> NEW 10px */
+  padding: 0.5em 0.75em; /* OLD 6.01px, 10.5px -> NEW 8,12 */
   overflow: hidden;
 }
 
 .bookmark .user .meta {
 	display: inline;
 	font-family: Georgia, serif;
-	font-size: 0.875em;
-	line-height: 2;
+	font-size: 0.875em; /* OLD 12.25px -> NEW  */
+	line-height: 2; /* OLD _px -> NEW  */
 }
 
 .bookmark .actions {
@@ -355,7 +355,7 @@ blurbs on the manage collection items pages, mostly reseting styles inherited fr
 }
 
 .bookmark dl.stats {
-  margin-bottom: 0.643em;
+  margin-bottom: 0.625em; /* OLD 9px -> NEW 10px */
 }
 
 /* line break between types of meta */
@@ -369,8 +369,8 @@ blurbs on the manage collection items pages, mostly reseting styles inherited fr
 }
 
 .bookmark .user .byline {
-  margin-top: 0.375em;
-  margin-right: 5.25em;
+  margin-top: 0.375em; /* OLD 5.25px -> NEW  */
+  margin-right: 5.25em; /* OLD 73.5px -> NEW  */
 }
 
 .bookmark .user .datetime, .bookmark .work .datetime {
@@ -378,8 +378,8 @@ blurbs on the manage collection items pages, mostly reseting styles inherited fr
 }
 
 .bookmark div.user .datetime {
-  top: 0.875em;
-  right: 0.875em;
+  top: 0.875em; /* OLD 12.25px -> NEW  */
+  right: 0.875em; /* OLD 12.25px -> NEW  */
 }
 
 .bookmark .short .status {
@@ -422,8 +422,8 @@ blurbs on the manage collection items pages, mostly reseting styles inherited fr
 .prompt .blurb h6 {
   display: inline-block;
   font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, Helvetica, sans-serif;
-  font-size: 1em;
-  margin: 0.643em 0 0;
+  font-size: 1em; /* OLD 14px -> NEW  */
+  margin: 0.625em 0 0; /* OLD 9px -> NEW  */
 }
 
 .prompt .blurb ul.optional {

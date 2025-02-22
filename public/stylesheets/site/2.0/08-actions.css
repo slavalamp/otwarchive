@@ -10,7 +10,7 @@ input[type="submit"], button
 }
 
 ul.actions, p.actions, li.actions, span.actions, fieldset.actions, dd.actions {
-  padding: 0.429em 0.25em 0.25em 0;
+  padding: 0.5em 0.25em 0.25em 0; /* OLD 6.01px, 3.5px, 3.5px -> NEW 8,4,4 */
   float: right;
   text-align: center;
 }
@@ -20,16 +20,17 @@ ul.actions {
   padding-top: 0;
 }
 
+/* needs testing - consider 20 or smth */
 .actions a, .actions a:link, .action, .action:link, .actions button, .actions input, input[type="submit"], button, .current, .actions label {
   background: #eee;
   color: #444;
   width: auto;
-  font-size: 100%;
-  line-height: 1.286;
-  height: 1.286em;
+  font-size: 100%; /* OLD 14px -> NEW  */
+  line-height: 1.5; /* OLD _px -> NEW 24 */
+  height: 1.5em; /* OLD 18px -> NEW 24 */
   vertical-align: middle;
   display: inline-block;
-  padding: 0.25em 0.75em;
+  padding: 0.25em 0.75em; /* OLD 3.5px, 10.5px -> NEW  */
   white-space: nowrap;
   overflow: visible;
   position: relative;
@@ -41,7 +42,7 @@ ul.actions {
     background-image: -o-linear-gradient(#fff 2%,#ddd 95%, #bbb 100%);
     background-image: -ms-linear-gradient(#fff 2%,#ddd 95%, #bbb 100%);
     background-image: linear-gradient(#fff 2%,#ddd 95%, #bbb 100%);
-    border-radius: 0.25em;
+    border-radius: 0.25em; /* OLD 3.5px -> NEW  */
     box-shadow: none;
 }
 
@@ -51,7 +52,7 @@ button {
 }
 
 label.action {
-  padding: 0.15em 0.375em;
+  padding: 0.15em 0.375em; /* OLD 2.1px, 5.25px -> NEW  */
 }
 
 input[type="submit"] {
@@ -80,7 +81,7 @@ test note: this pagination clear needs to be kept an eye on*/
 ol.pagination, div.pagination, ol.year {
   text-align: center;
   clear: right;
-  margin: 0.643em auto;
+  margin: 0.625em auto; /* OLD 9px -> NEW 10 */
 }
 
 .actions a:visited, .action:visited, .action a:link, .action a:visited {
@@ -112,27 +113,27 @@ ol.pagination, div.pagination, ol.year {
  }
 
 .actions li a, .actions li button, .actions li input, .actions li input[type="submit"], .actions li .current, .actions li label {
-  margin: 0.375em auto;
+  margin: 0.375em auto; /* OLD 5.25px -> NEW  */
 }
 
 .delete a, span.delete {
   border: 0;
   color: #900;
   font-weight: 900;
-  margin-right: 0.375em;
-  padding: 0 0.1em 0.15em;
+  margin-right: 0.375em; /* OLD 5.25px -> NEW  */
+  padding: 0 0.1em 0.15em; /* OLD 1.4px, 2.1px -> NEW  */
     box-shadow: -1px -1px 2px rgba(0,0,0,0.75);
-    border-radius: 0.875em;
+    border-radius: 0.875em; /* OLD 12.25px -> NEW  */
 }
 
 span.delete a {
-  margin: 0 0.2em;
+  margin: 0 0.2em; /* OLD 2.8px -> NEW  */
     box-shadow: none;
 }
 
 ul#skiplinks, .landmark, .landmark a, .index .heading.landmark {
   font-size: 0;
-  line-height: 0;
+  line-height: 0; /* OLD _px -> NEW  */
   height: 0;
   margin: 0;
   clear: both;
@@ -150,11 +151,11 @@ h2.landmark {
   z-index: 99;
   border: 2px solid #bbb;
   margin: auto;
-  padding: 0 0.375em;
+  padding: 0 0.375em; /* OLD 5.25px -> NEW  */
   overflow: hidden;
-  right: 2.5em;
+  right: 2.5em; /* OLD 35px -> NEW  */
     box-shadow: 2px 2px 5px #bbb;
-    border-radius: 0.15em;
+    border-radius: 0.15em; /* OLD 2.1px -> NEW  */
 }
 
 /* CONTEXTS */
@@ -163,10 +164,11 @@ legend .action:link {
   position: static;
 }
 
+/* needs testing - what is this */
 .heading .actions, .heading .action, .heading span.actions {
   height: auto;
-  font: 100 75%/1.286 'Lucida Grande', 'Lucida Sans Unicode', Verdana, Helvetica, sans-serif, 'GNU Unifont';
-  padding: 0.15em 0.375em;
+  font: 100 75%/1.286 'Lucida Grande', 'Lucida Sans Unicode', Verdana, Helvetica, sans-serif, 'GNU Unifont'; /* OLD 10.5px, _px -> NEW idk */
+  padding: 0.15em 0.375em; /* OLD 2.1px, 5.25px -> NEW  */
 }
 
 th .actions, td .actions {
@@ -184,7 +186,7 @@ dl.stats + .landmark + .actions, .mystery .summary + .landmark + .actions {
 }
 
 .chapter .secondary, .download .secondary {
-  top: 3.5em;
+  top: 3.5em; /* OLD 49px -> NEW  */
 }
 
 .dashboard .landmark {
@@ -198,7 +200,7 @@ dl.stats + .landmark + .actions, .mystery .summary + .landmark + .actions {
 .actions a.symbol, .action a {
   border: 0;
   background: none;
-  padding: 0 0 0.15em 0;
+  padding: 0 0 0.15em 0; /* OLD 2.1px -> NEW  */
 }
 
 .many p.actions {
@@ -211,7 +213,7 @@ dl.stats + .landmark + .actions, .mystery .summary + .landmark + .actions {
 }
 
 dd.any label.action {
-  margin-left: 0.5625em;
+  margin-left: 0.5625em; /* OLD 7.88px -> NEW  */
 }
 
 dl.index p.actions {

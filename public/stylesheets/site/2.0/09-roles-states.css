@@ -9,28 +9,28 @@ http://otwcode.github.com/docs/front_end_coding/patterns/modifiers
 
 .draft {
   border: 2px dashed #aaa;
-  padding: 0.643em;
-    border-radius: 0.5em;
+  padding: 0.625em; /* OLD 9px -> NEW 10px */
+    border-radius: 0.5em; /* OLD 7px -> NEW  */
 }
 
 /*(these states spoof the ".navigation .current" style)*/
-
+/* needs testing */
 span.unread, .replied, span.claimed, .actions span.defaulted {
   background: #ccc;
   color: #900;
   width: auto;
-  font: 100 100%/1.286 'Lucida Grande', 'Lucida Sans Unicode', Verdana, Helvetica, sans-serif, 'GNU Unifont';
-  height: 1.286em;
+  font: 100 100%/1.5 'Lucida Grande', 'Lucida Sans Unicode', Verdana, Helvetica, sans-serif, 'GNU Unifont'; /* OLD 14px, _px -> NEW 24 */
+  height: 1.5em; /* OLD 18px -> NEW 24 */
   vertical-align: middle;
   display: inline-block;
-  padding: 0.25em 0.75em;
+  padding: 0.25em 0.75em; /* OLD 3.5px, 10.5px -> NEW  */
   white-space: nowrap;
   overflow: visible;
   position: relative;
   text-decoration: none;
   border: 1px solid #bbb;
   border-bottom: 1px solid #aaa;
-    border-radius: 0.25em;
+    border-radius: 0.25em; /* OLD 3.5px -> NEW  */
 }
 
 .actions span.defaulted {

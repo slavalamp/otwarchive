@@ -30,7 +30,7 @@ div.comment, li.comment {
 
 .comment div.icon {
   float: left;
-  margin: -1.5625em 0.5625em 0.5625em 0;
+  margin: -1.5625em 0.5625em 0.5625em 0; /* OLD 21.88px, 7.88px, 7.88px -> NEW  */
   border-bottom: 5px solid #ddd;
 }
 
@@ -46,8 +46,8 @@ div.comment, li.comment {
 
 .comment h4.byline {
   background: #ddd;
-  padding: 0.25em 0.25em 0.25em 108px;
-  margin: 0 auto -0.25em;
+  padding: 0.25em 0.25em 0.25em 108px; /* OLD 3.5px, 3.5px, 3.5px -> NEW  */
+  margin: 0 auto -0.25em; /* OLD 3.5px -> NEW  */
 }
 
 .comment .role {
@@ -70,9 +70,9 @@ fieldset.comments, .comment .userstuff {
 }
 
 .comment .userstuff {
-  margin-bottom: 1em;
-  margin-top: 1em;
-  min-height: 3.3em;
+  margin-bottom: 1em; /* OLD 14px -> NEW  */
+  margin-top: 1em; /* OLD 14px -> NEW  */
+  min-height: 3.3em; /* OLD 46.2px -> NEW  */
 }
 
 .comment fieldset {
@@ -83,12 +83,13 @@ fieldset.comments, .comment .userstuff {
   float: right;
 }
 
+/* needs testing */
 .comment .edited {
-  margin: 1.286em 0.643em 0.25em;
+  margin: 1.25em 0.625em 0.25em; /* OLD 18px, 9px, 3.5px -> NEW 20 idk */
 }
 
 .comment .message {
-  padding: 0.643em;
+  padding: 0.625em; /* OLD 9px -> NEW 10px */
 }
 
 /* mods */

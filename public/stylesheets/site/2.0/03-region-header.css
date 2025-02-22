@@ -16,7 +16,7 @@ notice that CSS3 declarations sit are indented twice (four spaces) and always co
 /* check login and greeting; was a quick fix to remove bg */
 #header a, #header fieldset, #header form, #header p, #header li, #header h1, #small_login dl {
   background: transparent;
-  font-size: 100%;
+  font-size: 100%; /* OLD 14px -> NEW 16 */
   border: none;
   padding: 0;
   margin: 0;
@@ -25,8 +25,8 @@ notice that CSS3 declarations sit are indented twice (four spaces) and always co
 }
 
 #header {
-  font-size: 0.875em;
-  margin: 0 0 1em;
+  font-size: 1em; /* OLD 14px -> NEW 16px */
+  margin: 0 0 1em; /* OLD 14px -> NEW k */
   padding: 0;
   position: relative;
 }
@@ -49,19 +49,20 @@ notice that CSS3 declarations sit are indented twice (four spaces) and always co
 
 #header .heading {
   float: left;
-  padding: 0.375em;
+  padding: 0.375em; /* OLD 5.25px -> NEW 6px ok */
 }
 
 /* 1.714em x 14px = 24px */
+/* needs testing along with sup below */
 #header .heading a {
   color: #900;
-  font-size: 1.714em;
-  line-height: 1.75em;
+  font-size: 2em; /* OLD 24px -> NEW 32px */
+  line-height: 1.75em; /* OLD 42/1.75 -> NEW ??? */
 }
 
 /* 0.583em x 24px = 14px */
 #header .heading sup {
-  font-size: 0.583em;
+  font-size: 0.5em; /* OLD 14px -> NEW 16px */
   font-style: italic;
 }
 
@@ -75,9 +76,9 @@ notice that CSS3 declarations sit are indented twice (four spaces) and always co
 #header .menu, #small_login {
   background: #ddd;
   display: none;
-  padding: 0.25em 0;
+  padding: 0.25em 0; /* OLD 3.5px -> NEW k */
   position: absolute;
-  width: 20em;
+  width: 20em; /* OLD 280px -> NEW 320?? */
   z-index: 55;
     box-shadow: 1px 1px 3px -1px #444;
     background-image: -moz-linear-gradient(top, rgba(221, 221, 221, 0.98) 0%, rgba(204, 204, 204, 0.98) 100%);
@@ -94,7 +95,7 @@ notice that CSS3 declarations sit are indented twice (four spaces) and always co
 
 #header .menu li {
   border-bottom: 1px solid #888;
-  margin: 0 0.25em;
+  margin: 0 0.25em; /* OLD 3.5px -> NEW k */
   text-align: left;
 }
 
@@ -105,7 +106,7 @@ notice that CSS3 declarations sit are indented twice (four spaces) and always co
 #header .dropdown .menu a {
   background: transparent;
   display: block;
-  padding: 0.75em 0.5em 0.5em;
+  padding: 0.75em 0.5em 0.5em; /* OLD 10.5px, 7px, 7px -> NEW k */
 }
 
 #header .dropdown .menu a:hover, #header .dropdown .menu a:focus {
@@ -116,22 +117,22 @@ notice that CSS3 declarations sit are indented twice (four spaces) and always co
 
 #login, #greeting {
   float: right;
-  margin-right: 0.375em;
+  margin-right: 0.375em; /* OLD 5.25px -> NEW k */
 }
 
 #header .user {
-  padding: 0.429em 0 0;
+  padding: 0.5em 0 0; /* OLD 6.01px -> NEW 8px */
   position: relative;
   z-index: 20;
 }
 
 #header .user a, #small_login .action {
-  padding: 0.25em 0.75em;
+  padding: 0.25em 0.75em; /* OLD 3.5px, 10.5px -> NEW k */
 }
 
 #header .user a:hover, #header .user a:focus {
   color: #900;
-    border-radius: 0.25em;
+    border-radius: 0.25em; /* OLD 3.5px -> NEW k */
 }
 
 #login .open a:hover, #login .open a:focus {
@@ -139,7 +140,7 @@ notice that CSS3 declarations sit are indented twice (four spaces) and always co
 }
 
 #greeting .user > li {
-  margin: 0 0.125em;
+  margin: 0 0.125em; /* OLD 1.75px -> NEW k */
 }
 
 #greeting .menu {
@@ -149,7 +150,7 @@ notice that CSS3 declarations sit are indented twice (four spaces) and always co
 
 /* square off bottom corners when the dropdown is visible */
 #greeting .open a, #greeting .dropdown:hover a {
-    border-radius: 0.25em 0.25em 0 0;
+    border-radius: 0.25em 0.25em 0 0; /* OLD 3.5px, 3.5px -> NEW k */
 }
 
 #greeting .dropdown .menu a {
@@ -159,8 +160,8 @@ notice that CSS3 declarations sit are indented twice (four spaces) and always co
 #greeting p.icon {
   float: right;
   height: auto;
-  padding: 0.429em 0.125em 0;
-  line-height: 1;
+  padding: 0.5em 0.125em 0; /* OLD 6.01px, 1.75px -> NEW 8px, k */
+  line-height: 1; /* OLD _px -> NEW k */
   width: auto;
 }
 
@@ -170,8 +171,8 @@ notice that CSS3 declarations sit are indented twice (four spaces) and always co
 }
 
 #greeting img.icon {
-  height: 1.786em;
-  width: 1.786em;
+  height: 1.5625em; /* OLD 25px(1.786em) -> NEW 25px */
+  width: 1.5625em; /* OLD 25px -> NEW 25px */
     background-size: 100%;
 }
 
@@ -179,14 +180,14 @@ notice that CSS3 declarations sit are indented twice (four spaces) and always co
 
 #small_login {
   border: 2px solid #fff;
-  padding: 0.375em;
+  padding: 0.375em; /* OLD 5.25px -> NEW k? */
   right: 0;
   z-index: 10;
     box-shadow: none;
 }
 
 #small_login form {
-  margin-top: 1.286em;
+  margin-top: 1.5em; /* OLD 18px(1.286) -> NEW 1.5 */
 }
 
 #small_login dt, #small_login dd {
@@ -196,7 +197,7 @@ notice that CSS3 declarations sit are indented twice (four spaces) and always co
 
 #small_login dt, #small_login .submit {
   border-bottom: none;
-  padding: 0.375em 0 0;
+  padding: 0.375em 0 0; /* OLD 5.25px -> NEW k */
 }
 
 #small_login .actions {
@@ -206,12 +207,12 @@ notice that CSS3 declarations sit are indented twice (four spaces) and always co
 
 #small_login .footnote {
   float: left;
-  font-size: 0.857em;
-  padding: 0.375em 0;
+  font-size: 0.875em; /* OLD 12px -> NEW 14 */
+  padding: 0.375em 0; /* OLD 5.25px -> NEW k */
 }
 
 #small_login .footnote li {
-  padding: 0 0.25em;
+  padding: 0 0.25em; /* OLD 3.5px -> NEW k */
 }
 
 .dropdown #small_login .footnote a {
@@ -231,11 +232,11 @@ notice that CSS3 declarations sit are indented twice (four spaces) and always co
 }
 
 #header .primary > li:first-of-type {
-  margin-left: 2em;
+  margin-left: 2em; /* OLD 28px -> NEW k */
 }
 
 #header .primary a {
-  padding: 0.429em 0.75em;
+  padding: 0.5em 0.75em; /* OLD 6.01px, 10.5px -> NEW 8,12 */
 }
 
 #header .primary a {
@@ -244,7 +245,7 @@ notice that CSS3 declarations sit are indented twice (four spaces) and always co
 
 #header .primary .menu a {
   color: #111;
-  padding: 0.75em 0.5em 0.5em;
+  padding: 0.75em 0.5em 0.5em; /* OLD 10.5px, 7px, 7px -> NEW k */
 }
 
 /* search */
@@ -252,7 +253,7 @@ notice that CSS3 declarations sit are indented twice (four spaces) and always co
 #header .search {
   float: right;
   color: #2a2a2a;
-  margin-right: 0.25em;
+  margin-right: 0.25em; /* OLD 3.5px -> NEW k */
 }
 
 #header #search input:focus {
@@ -264,9 +265,10 @@ notice that CSS3 declarations sit are indented twice (four spaces) and always co
   border: none;
 }
 
+/* needs testing */
 /* 0.2857em x 14px = 4px because the input has a padding of 0.15em x 14px = 2px and it needs to match 0.429em x 14px = 6px */
 #header #search .text {
-  margin: 0.2857em 0.429em;
+  margin: 0.3em 0.5em; /* OLD 4px, 6.01px -> NEW 4.8, 8 */
 }
 
 #header #search .button {
@@ -280,10 +282,11 @@ notice that CSS3 declarations sit are indented twice (four spaces) and always co
   clear: both;
   color: #fff;
   display: block;
-  font-size: 1.714em;
-  line-height: 1.5;
+  /* needs testing by which i mean why does it need to be defined */
+  font-size: 2em; /* OLD 24px -> NEW 32px; */
+  line-height: 1.5; /* OLD _px -> NEW k */
   margin: 0;
-  padding: 0 0.375em;
+  padding: 0 0.375em; /* OLD 9px -> NEW k */
     text-shadow: none;
 }
 

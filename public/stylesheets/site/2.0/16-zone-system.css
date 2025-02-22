@@ -5,29 +5,30 @@ SUBSECTIONS:
 */
 
 .system p {
-  line-height: 1.5;
+  line-height: 1.5; /* OLD _px -> NEW  */
 }
 
 .system .userstuff {
-  max-width: 72em;
+  max-width: 72em; /* OLD 1008px -> NEW  */
   margin: auto;
 }
 
 .system .userstuff h3 {
-  margin-top: 3em;
+  margin-top: 3em; /* OLD 42px -> NEW  */
 }
 
 /*1. ZONE: SYSTEM: SPLASH PAGE*/
 
 .splash {
   margin: auto;
-  max-width: 78em;
+  max-width: 78em; /* OLD 1092px -> NEW  */
 }
 
+/* needs testing, why is it bigger */
 .splash .module h3 {
   border-bottom: 1px solid #c8c8c8;
   color: #900;
-  font-size: 1.714em;
+  font-size: 1.75em; /* OLD 24px -> NEW 28px */
 }
 
 .splash span.link {
@@ -35,7 +36,7 @@ SUBSECTIONS:
 }
 
 .splash .link a {
-  font-size: 0.583em;
+  font-size: 0.583em; /* OLD 8.16px -> NEW  */
 }
 
 .splash .browse, .splash div.news {
@@ -61,15 +62,15 @@ SUBSECTIONS:
 /* module: browse */
 
 .splash .browse li {
-  margin: 0.375em 0;
-  padding: 0.375em 0;
+  margin: 0.375em 0; /* OLD 5.25px -> NEW  */
+  padding: 0.375em 0; /* OLD 5.25px -> NEW  */
   width: 50%;
 }
 
 .splash .browse li a:before {
   color: #900;
   content: "\00BB";
-  padding: 0 0.25em 0 0;
+  padding: 0 0.25em 0 0; /* OLD 3.5px -> NEW  */
 }
 
 .splash .browse li:nth-of-type(1), .splash .browse li:nth-of-type(2) {
@@ -77,7 +78,7 @@ SUBSECTIONS:
 }
 
 .splash .browse li:nth-of-type(odd) {
-  padding-right: 0.375em;
+  padding-right: 0.375em; /* OLD 5.25px -> NEW  */
 }
 
 /* module: favorite tags */
@@ -87,7 +88,7 @@ SUBSECTIONS:
 }
 
 .splash .favorite a {
-  padding: 0.25em 0.375em;
+  padding: 0.25em 0.375em; /* OLD 3.5px, 5.25px -> NEW  */
 }
 
 .splash .favorite li:nth-of-type(odd) a {
@@ -101,12 +102,12 @@ SUBSECTIONS:
 /* module: intro */
 
 .splash .intro {
-  padding: 1em 0 2em;
+  padding: 1em 0 2em; /* OLD 14px, 28px -> NEW  */
 }
 
 .splash .intro h2 {
-  font-size: 2em;
-  line-height: 1.375;
+  font-size: 2em; /* OLD 28px -> NEW  */
+  line-height: 1.375; /* OLD _px -> NEW  */
 }
 
 .splash .intro .stats, .splash .parent {
@@ -120,22 +121,22 @@ SUBSECTIONS:
 .splash .module div.account {
   background: #eaeaea;
   border: 1px solid #ccc;
-    border-radius: 0.5em;
+    border-radius: 0.5em; /* OLD 7px -> NEW  */
     box-sizing: border-box;
 }
 
 .splash .account .heading {
-  margin: 1em;
+  margin: 1em; /* OLD 14px -> NEW  */
 }
 
 .splash .account p {
-  margin-left: 1em;
-  margin-right: 1em;
+  margin-left: 1em; /* OLD 14px -> NEW  */
+  margin-right: 1em; /* OLD 14px -> NEW  */
 }
 
 .splash .account ul {
-  margin-left: 4em;
-  margin-right: 1em;
+  margin-left: 4em; /* OLD 56px -> NEW  */
+  margin-right: 1em; /* OLD 14px -> NEW  */
 }
 
 .splash .account li {
@@ -144,7 +145,7 @@ SUBSECTIONS:
 
 .splash .account .actions {
   float: none;
-  font-size: 1.143em;
+  font-size: 1.125em; /* OLD 16px -> NEW 18 */
 }
 
 /* module: news */
@@ -158,7 +159,7 @@ SUBSECTIONS:
 }
 
 .splash .news .meta {
-  font: normal 0.857em 'Monaco', 'Consolas', Courier, monospace;
+  font: normal 0.875em 'Monaco', 'Consolas', Courier, monospace; /* OLD 12px -> NEW 14 */
 }
 
 .splash .news blockquote {
@@ -176,13 +177,13 @@ SUBSECTIONS:
 /* module: marked for later */
 
 .splash .blurb blockquote {
-  margin: 0.643em auto;
+  margin: 0.625em auto; /* OLD 9px -> NEW  */
 }
 
 /* module: unread messages */
 
 .splash .comment .userstuff {
-  margin: 1em;
+  margin: 1em; /* OLD 14px -> NEW  */
 }
 
 /* module: social */
@@ -196,10 +197,11 @@ SUBSECTIONS:
 }
 
 /* mod: logged-in */
+/* needs testing */
 
 .logged-in .splash > .module {
   float: left;
-  margin: 0 1% 1.571em 1%;
+  margin: 0 1% 1.571em 1%; /* OLD 21.99px -> NEW ??? */
   width: 48%;
 }
 
@@ -238,16 +240,16 @@ Guidelines. */
 
 .docs .userstuff h6 {
   border-bottom: none;
-  margin: 0.714em 0;
+  margin: 0.75em 0; /* OLD 10px -> NEW 12 */
 }
 
 .docs .userstuff ul, .docs .userstuff ol, .docs .userstuff details .toc {
-  margin: 0.643em auto;
+  margin: 0.625em auto; /* OLD 9px -> NEW  */
   padding: 0;
 }
 
 .docs .userstuff li {
-  padding: 0 1.5em;
+  padding: 0 1.5em; /* OLD 21px -> NEW  */
 }
 
 .docs .userstuff ul ul li {
@@ -273,12 +275,12 @@ For practicality, the in-page full TOS module on the account creation page
 /content, /privacy, and /tos pages. */
 
 #tos-partial .tos {
-  height: 36em;
+  height: 36em; /* OLD 504px -> NEW  */
   overflow: auto;
 }
 
 #tos-partial .userstuff {
-  margin: 0.643em;
+  margin: 0.625em; /* OLD 9px -> NEW 10px */
   max-width: 100%;
 }
 
@@ -291,15 +293,15 @@ admin role is only admin facing, and changes normal views in role-admin.css*/
 
 .feedbacks h3 {
   clear: right;
-  padding-top: 1.929em;
+  padding-top: 1.929em; /* OLD 27.01px -> NEW  */
 }
 
 .feedbacks form {
-  margin-top: 1.929em;
+  margin-top: 1.929em; /* OLD 27.01px -> NEW  */
 }
 
 .feedbacks form .notice {
-  margin: 0.643em;
+  margin: 0.625em; /* OLD 9px -> NEW 10px */
 }
 
 /* 6. ZONE: SYSTEM: FAQS
@@ -307,13 +309,13 @@ For practicality, /archive_faqs are also .docs and .support and have the .userst
 
 .faq .categories {
   margin: 0 auto;
-  max-width: 72em;
+  max-width: 72em; /* OLD 1008px -> NEW  */
   float: none;
 }
 
 .faq .categories h3 {
-  border-bottom: 0.25em double #333;
-  margin-top: 1.929em;
+  border-bottom: 0.25em double #333; /* OLD 3.5px -> NEW  */
+  margin-top: 1.929em; /* OLD 27.01px -> NEW  */
 }
 
 .faq .categories li {
@@ -333,8 +335,8 @@ For practicality, /archive_faqs are also .docs and .support and have the .userst
 }
 
 .faq .userstuff .notice, .faq .userstuff .caution, .faq .example, .guideline .userstuff .notice, .guideline .userstuff .caution, .guideline .example  {
-  margin: 0.643em 3.858em;
-  padding: 0.643em;
+  margin: 0.625em 3.858em; /* OLD 9px, 54.01px -> NEW  */
+  padding: 0.625em; /* OLD 9px -> NEW 10px */
 }
 
 .faq .example, .guideline .example {
@@ -342,17 +344,17 @@ For practicality, /archive_faqs are also .docs and .support and have the .userst
 }
 
 .faq .userstuff nav.toc {
-  margin: 3.215em auto;
+  margin: 3.215em auto; /* OLD 45.01px -> NEW  */
 }
 
 /* 7. ZONE: SYSTEM: TOS, TOS FAQ, AND TOS POPUP */
 
 .tos .userstuff nav.toc > details {
-  margin-top: 3em;
+  margin-top: 3em; /* OLD 42px -> NEW  */
 }
 
 .tos .userstuff nav.toc > details > summary {
-  border-bottom: 0.25em double #333;
+  border-bottom: 0.25em double #333; /* OLD 3.5px -> NEW  */
 }
 
 .tos .userstuff nav.toc > details > summary h3 {
@@ -360,7 +362,7 @@ For practicality, /archive_faqs are also .docs and .support and have the .userst
 }
 
 .tos_faq .userstuff .toc {
-  margin-bottom: 3.215em;
+  margin-bottom: 3.215em; /* OLD 45.01px -> NEW  */
 }
 
 #tos_prompt {
@@ -379,7 +381,7 @@ For practicality, /archive_faqs are also .docs and .support and have the .userst
   color: #fff;
   display: block;
   margin: 0;
-  padding: 0.125em 0;
+  padding: 0.125em 0; /* OLD 1.75px -> NEW  */
 }
 
 #tos_prompt .heading span {
@@ -397,20 +399,20 @@ For practicality, /archive_faqs are also .docs and .support and have the .userst
 }
 
 #tos_prompt p {
-  line-height: 1.4;
+  line-height: 1.4; /* OLD _px -> NEW  */
 }
 
 #tos_prompt p:first-of-type {
-  margin: 2em 0 0.643em 0;
+  margin: 2em 0 0.625em 0; /* OLD 28px, 9px -> NEW  */
 }
 
 #tos_prompt .confirmation {
-  margin: 2em 0 1em;
+  margin: 2em 0 1em; /* OLD 28px, 14px -> NEW  */
 }
 
 #tos_prompt p.submit {
-  margin-bottom: 2em;
-  line-height: 1.125;
+  margin-bottom: 2em; /* OLD 28px -> NEW  */
+  line-height: 1.125; /* OLD _px -> NEW  */
 }
 
 #tos_prompt .submit input, #tos_prompt .submit button {
@@ -428,11 +430,11 @@ For practicality, /archive_faqs are also .docs and .support and have the .userst
 #proxy-notice {
   background: #efd1d1;
   border-bottom: 1px solid #900;
-  font-size: 0.875em;
+  font-size: 0.875em; /* OLD 12.25px -> NEW  */
 }
 
 #proxy-notice .userstuff {
-  padding: 0.643em 0.875em;
+  padding: 0.625em 0.875em; /* OLD 9px, 12.25px -> NEW  */
 }
 
 #proxy-notice .submit {

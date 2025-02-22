@@ -5,13 +5,13 @@ http://otwcode.github.com/docs/front_end_coding/patterns/meta
 dl.meta {
   border: 1px solid #ccc;
   clear: right;
-  padding: 1.286em 0.75em;
+  padding: 1.5em 0.75em; /* OLD 18px, 10.5px -> NEW 24/k */
   position: relative;
   overflow: hidden;
 }
 
 .meta dt {
-  min-width: 10.5em;
+  min-width: 10.5em; /* OLD 147px -> NEW  */
   width: 25%;
   float: left;
   clear: left;
@@ -20,7 +20,7 @@ dl.meta {
 .meta dd {
   width: 72.5%;
   float: left;
-  margin: 0 0 0.643em;
+  margin: 0 0 0.625em; /* OLD 9px -> NEW 10px */
 }
 
 .meta .stats dl {
@@ -29,7 +29,7 @@ dl.meta {
 }
 
 .meta .stats dl dd, .meta .stats dl dt {
-  margin: 0 0.375em auto 0;
+  margin: 0 0.375em auto 0; /* OLD 5.25px -> NEW  */
   width: auto;
   min-width: 0;
   clear: none;
@@ -79,7 +79,7 @@ dl.meta {
 .news .meta dd:after {
   content: " ";
   display: block;
-  height: 0.643em;
+  height: 0.625em; /* OLD 9px -> NEW 10px */
 }
 
 /* TODO the post new work form needs its classes changed so these overrides are no longer needed */

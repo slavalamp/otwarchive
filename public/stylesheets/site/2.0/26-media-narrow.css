@@ -1,8 +1,8 @@
-/* MEDIA: only screen and (max-width: 42em), handheld ENDMEDIA */
+/* MEDIA: only screen and (max-width: 42em), handheld ENDMEDIA */ /* OLD 588px -> NEW  */
 
 #outer {
   background: #fff;
-  font-size: 0.875em;
+  font-size: 0.875em; /* OLD 12.25px -> NEW  */
   position: relative;
 }
 
@@ -33,7 +33,7 @@ body .narrow-shown {
 /* 03 region header */
 
 #header .logo {
-  height: 1.75em;
+  height: 1.75em; /* OLD 24.5px -> NEW  */
 }
 
 #header .dropdown a:focus {
@@ -89,7 +89,7 @@ body .narrow-shown {
 #dashboard, #dashboard.own {
   border-bottom-width: 7px;
   border-top-width: 7px;
-  padding: 0.25em 0;
+  padding: 0.25em 0; /* OLD 3.5px -> NEW  */
 }
 
 /* 05 region main */
@@ -139,7 +139,7 @@ body .narrow-shown {
 }
 
 .blurb dl.tags dd, dl.meta dd {
-  margin-left: 1em;
+  margin-left: 1em; /* OLD 14px -> NEW  */
 }
 
 .alphabet .listbox li {
@@ -155,7 +155,7 @@ body .narrow-shown {
 /* 15 group: comments */
 
 .thread .thread {
-  margin-left: 1em;
+  margin-left: 1em; /* OLD 14px -> NEW  */
 }
 
 .comment .userstuff {
@@ -198,7 +198,7 @@ body .narrow-shown {
 }
 
 .splash .intro h2 {
-  font-size: 1.5em;
+  font-size: 1.5em; /* OLD 21px -> NEW  */
     word-break: normal;
 }
 
@@ -224,8 +224,8 @@ form.filters dl {
   max-width: 95%;
   position: absolute;
   top: 0;
-  right: -16em;
-  width: 16em; /* 14em/0.875em */
+  right: -16em; /* OLD 224px -> NEW  */
+  width: 16em; /* 14em/0.875em */ /* OLD 224px, 196px, 12.25px -> NEW  */
   z-index: 400;
 }
 
@@ -242,17 +242,17 @@ form.filters dl {
 }
 
 .filtering {
-  right: 14em;
+  right: 14em; /* OLD 196px -> NEW  */
 }
 
 .filtering .filters #leave_filters {
   background: transparent none;
   border-bottom: none;
   position: fixed;
-  top: -101em;
-  bottom: -101em;
-  left: -10em;
-  right: -10em;
+  top: -101em; /* OLD 1414px -> NEW  */
+  bottom: -101em; /* OLD 1414px -> NEW  */
+  left: -10em; /* OLD 140px -> NEW  */
+  right: -10em; /* OLD 140px -> NEW  */
   z-index: 0;
 }
 
@@ -273,7 +273,7 @@ form.filters dl {
 }
 
 .announcement p.submit {
-  bottom: -0.5em;
+  bottom: -0.5em; /* OLD 7px -> NEW  */
   right: 1%;
 }
 

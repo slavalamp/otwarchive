@@ -19,17 +19,17 @@ user home, collections and challenges home, tag home, admin comms home
 }
 
 .home .header ul.actions {
-  margin-bottom: 0.643em;
+  margin-bottom: 0.625em; /* OLD 9px -> NEW 10px */
   padding-top: 0;
 }
 
 .admin .header h3 {
-  font-size: 2.143em;
+  font-size: 2em; /* OLD 30px -> NEW 32px */
   text-align: center;
 }
 
 .home .primary {
-  margin: 0 0 0.643em;
+  margin: 0 0 0.625em; /* OLD 9px -> NEW 10px */
   min-height: 100px;
 }
 

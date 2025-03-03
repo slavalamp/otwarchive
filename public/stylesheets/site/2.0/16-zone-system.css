@@ -34,7 +34,7 @@ SUBSECTIONS:
 .splash span.link {
   float: right;
 }
-
+/* needs testing and a normal size */
 .splash .link a {
   font-size: 0.583em; /* OLD 8.16px -> NEW  */
 }

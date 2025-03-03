@@ -11,7 +11,7 @@ dl.meta {
 }
 
 .meta dt {
-  min-width: 10.5em; /* OLD 147px -> NEW  */
+  min-width: 10.5em; /* OLD 147px -> NEW k */
   width: 25%;
   float: left;
   clear: left;
@@ -29,7 +29,7 @@ dl.meta {
 }
 
 .meta .stats dl dd, .meta .stats dl dt {
-  margin: 0 0.375em auto 0; /* OLD 5.25px -> NEW  */
+  margin: 0 0.375em auto 0; /* OLD 5.25px -> NEW k */
   width: auto;
   min-width: 0;
   clear: none;

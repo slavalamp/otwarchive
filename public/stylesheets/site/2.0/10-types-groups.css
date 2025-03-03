@@ -37,49 +37,49 @@ ul.cloud {
 
 a.cloud1 {
   color: #200;
-  font-size: 0.625em; /* OLD 8.75px -> NEW  */
+  font-size: 0.625em; /* OLD 8.75px -> NEW 10 */
   font-weight: 100;
 }
 
 a.cloud2 {
   color: #300;
-  font-size: 0.75em; /* OLD 10.5px -> NEW  */
+  font-size: 0.75em; /* OLD 10.5px -> NEW 12 */
   font-weight: 200;
 }
 
 a.cloud3 {
   color: #400;
-  font-size: 0.875em; /* OLD 12.25px -> NEW  */
+  font-size: 0.875em; /* OLD 12.25px -> NEW 14 */
   font-weight: 300;
 }
 
 a.cloud4 {
   color: #500;
-  font-size: 1em; /* OLD 14px -> NEW  */
+  font-size: 1em; /* OLD 14px -> NEW 16 */
   font-weight: 400;
 }
 
 a.cloud5 {
   color: #600;
-  font-size: 1.125em; /* OLD 15.75px -> NEW  */
+  font-size: 1.125em; /* OLD 15.75px -> NEW 18 */
   font-weight: 500;
 }
 
 a.cloud6 {
   color: #700;
-  font-size: 1.5em; /* OLD 21px -> NEW  */
+  font-size: 1.5em; /* OLD 21px -> NEW 24 */
   font-weight: 600;
 }
 
 a.cloud7 {
   color: #800;
-  font-size: 1.875em; /* OLD 26.25px -> NEW  */
+  font-size: 1.875em; /* OLD 26.25px -> NEW 30 */
   font-weight: 700;
 }
 
 a.cloud8 {
   color: #900;
-  font-size: 2.25em; /* OLD 31.5px -> NEW  */
+  font-size: 2.25em; /* OLD 31.5px -> NEW 36 */
   font-weight: 800;
 }
 

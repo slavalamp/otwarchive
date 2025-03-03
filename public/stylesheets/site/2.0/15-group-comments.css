@@ -43,7 +43,7 @@ div.comment, li.comment {
   background: url("/images/imageset.png") no-repeat 0px -635px;
   display: block;
 }
-
+/* needs testing */
 .comment h4.byline {
   background: #ddd;
   padding: 0.25em 0.25em 0.25em 108px; /* OLD 3.5px, 3.5px, 3.5px -> NEW  */
@@ -69,6 +69,7 @@ fieldset.comments, .comment .userstuff {
     box-shadow: none;
 }
 
+/* needs testing, tf is a 3.3em */
 .comment .userstuff {
   margin-bottom: 1em; /* OLD 14px -> NEW  */
   margin-top: 1em; /* OLD 14px -> NEW  */

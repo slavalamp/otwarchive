@@ -34,8 +34,8 @@ dl.meta dd ul li, .meta .stats dl, .meta .stats dl dt, .meta .stats dl dd {
 
 .meta .stats dl dt, .meta .stats dl dd {
   margin-block: 0 auto;
-  margin-inline: 0 0.375em;
-  padding-inline-end: 0.25em;
+  margin-inline: 0 0.375em; /* OLD whatever -> NEW k */
+  padding-inline-end: 0.25em; /* OLD whatever -> NEW k */
   width: auto;
   min-width: 0;
   clear: none;

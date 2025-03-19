@@ -22,7 +22,7 @@ Arguably filter and search could be styled in interactions but I've put them her
 
 form.search input[type="text"] {
   border-top-color: #999;
-  padding: 0.15em 0.25em; /* OLD 2.1px, 3.5px -> NEW  */
+  padding: 0.1875em 0.25em; /* OLD 2.1px/0.15em, 3.5px -> NEW 3px, k */
     border-radius: 1em; /* OLD 14px -> NEW  */
 }
 
@@ -36,14 +36,15 @@ form.search input[type="text"] {
   padding: 0.15em; /* OLD 2.1px -> NEW  */
   position: absolute;
   left: -999em; /* OLD 13986px -> NEW  */
-  font-size: 0.75em; /* OLD 10.5px -> NEW  */
+  font-size: 0.75em; /* OLD 10.5px -> NEW 12px */
   z-index: 1;
 }
 
 .search input:focus + [role="tooltip"] {
   left: 1em; /* OLD 14px -> NEW  */
   right: 1em; /* OLD 14px -> NEW  */
-  top: 2.75em; /* OLD 38.5px -> NEW  */
+  /* navbar height (2.5em) / 0.75 */
+  top: 3.125em; /* OLD 28.88333px -> NEW 37.5px */
 }
 
 li.search fieldset {

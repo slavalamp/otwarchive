@@ -168,10 +168,10 @@
 /* WORK MARGINS */
 
 #workskin {
-  font-size: 1.08em; /* OLD 15.12px -> NEW  */
+  font-size: 1em; /* OLD 15.12px -> NEW 16px */
   margin: auto;
   padding: 0 0.25em; /* OLD 3.5px -> NEW  */
-  max-width: 72em; /* OLD 1008px -> NEW  */
+  max-width: 64em; /* OLD 1008px/72em -> NEW 64em */
   overflow-x: auto;
   overflow-y: hidden;
   position: relative;

@@ -46,7 +46,7 @@ li.blurb:after, .blurb .blurb:after {
 .blurb .header .heading, .blurb .header ul {
   display: block;
   background: transparent;
-  margin: 0.375em 5.25em 0 65px; /* OLD 5.25px, 73.5px -> NEW  */
+  margin: 0.375em 7.25em 0 65px; /* OLD 5.25px, 73.5px -> NEW k, long enough to fit the date */
 }
 
 .blurb .header img {

@@ -73,7 +73,8 @@ h2 {
 
 h3 {
   font-size: 1.5em; /* OLD 18px -> NEW 24px */
-  line-height: 1; /* OLD 18px -> NEW 24px */  /* needs testing - might need bigger? */
+  /* needs testing - might need bigger?... hopefully not or work blurbs will look bad */
+  line-height: 1; /* OLD 18px -> NEW 24px */
   margin: 0.5em 0; /* OLD 9.675px (0.5375em) -> NEW 12px */
 }
 

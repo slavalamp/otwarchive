@@ -1,10 +1,36 @@
 <!--Descriptive page name, messages and instructions-->
 <% if @user %>
-<h2 class="heading"><%= t(".page_heading", login: @user.login) %></h2>
+<h2 class="heading">
+  <% if @can_access_unapproved_related_works && params[:declined] %>
+    <%= t(".page_heading.declined", login: @user.login) %>
+  <% elsif @can_access_unapproved_related_works && params[:requests] %>
+    <%= t(".page_heading.requests", login: @user.login) %>
+  <% else %>
+    <%= t(".page_heading.approved", login: @user.login) %>
+  <% end %>
+</h2>
 <% end %>
 <!--/descriptions-->
 
 <!--subnav-->
+<% if @can_access_unapproved_related_works && (@requests_exist || @declined_works_exist) %>
+  <h3 class="landmark heading"><%= ts("Navigation") %></h3>
+  <ul class="navigation actions" role="navigation">
+    <% if @requests_exist %>
+      <li>
+        <%= span_if_current t(".related_work_requests"), user_related_works_path(@user, requests: true) %>
+      </li>
+    <% end %>
+    <li>
+      <%= span_if_current t(".related_works"), user_related_works_path(@user), !(params[:requests] || params[:declined]) %>
+    </li>
+    <% if @declined_works_exist %>
+      <li>
+        <%= span_if_current t(".declined_related_works"), user_related_works_path(@user, declined: true) %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
 <!--/subnav-->
 
 <!--main content-->

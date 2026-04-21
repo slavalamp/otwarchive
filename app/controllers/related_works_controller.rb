@@ -10,15 +10,30 @@ class RelatedWorksController < ApplicationController
     @remixes_of_user = @user.related_works.posted.where(translation: false)
     @translations_by_user = @user.parent_work_relationships.posted.where(translation: true)
     @remixes_by_user = @user.parent_work_relationships.posted.where(translation: false)
+    @can_access_unapproved_related_works = @user && (@user == current_user || (logged_in_as_admin? && policy(:related_work).access_unapproved?))
 
-    return if @user == current_user
+    @requests_exist = @user.related_works.posted.where(reciprocal: false).present?
+    @declined_works_exist = @requests_exist || @user.parent_work_relationships.posted.where(reciprocal: false).present?
 
-    # Extra constraints on what we display if someone else is viewing @user's
-    # related works page:
-    @translations_of_user = @translations_of_user.merge(Work.revealed.non_anon).where(reciprocal: true)
-    @remixes_of_user = @remixes_of_user.merge(Work.revealed.non_anon).where(reciprocal: true)
-    @translations_by_user = @translations_by_user.merge(Work.revealed.non_anon).where(reciprocal: true)
-    @remixes_by_user = @remixes_by_user.merge(Work.revealed.non_anon).where(reciprocal: true)
+    if @can_access_unapproved_related_works && params[:requests] && @requests_exist
+      @translations_of_user = @translations_of_user.where(reciprocal: false)
+      @remixes_of_user = @remixes_of_user.where(reciprocal: false)
+    elsif @can_access_unapproved_related_works && params[:declined]
+      @translations_of_user = @translations_of_user.where(reciprocal: false)
+      @remixes_of_user = @remixes_of_user.where(reciprocal: false)
+      @translations_by_user = @translations_by_user.where(reciprocal: false)
+      @remixes_by_user = @remixes_by_user.where(reciprocal: false)
+    elsif @can_access_unapproved_related_works
+      @translations_of_user = @translations_of_user.where(reciprocal: true)
+      @remixes_of_user = @remixes_of_user.where(reciprocal: true)
+      @translations_by_user = @translations_by_user.where(reciprocal: true)
+      @remixes_by_user = @remixes_by_user.where(reciprocal: true)
+    else
+      @translations_of_user = @translations_of_user.merge(Work.revealed.non_anon).where(reciprocal: true)
+      @remixes_of_user = @remixes_of_user.merge(Work.revealed.non_anon).where(reciprocal: true)
+      @translations_by_user = @translations_by_user.merge(Work.revealed.non_anon).where(reciprocal: true)
+      @remixes_by_user = @remixes_by_user.merge(Work.revealed.non_anon).where(reciprocal: true)
+    end
   end
 
   # GET /related_works/1

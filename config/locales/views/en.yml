@@ -2798,7 +2798,13 @@ en:
         page_heading: Marked for Later
   related_works:
     index:
-      page_heading: "%{login}'s Related Works"
+      page_heading:
+        approved: "%{login}'s Related Works"
+        declined: "%{login}'s Declined Related Works"
+        requests: "%{login}'s Related Work Requests"
+      related_works: "Related Works"
+      declined_related_works: "Declined Related Works"
+      related_work_requests: "Related Work Requests"
   series:
     series_module:
       hidden_by_admin_alt: "(Hidden by Admin)"

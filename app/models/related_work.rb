@@ -12,6 +12,16 @@ class RelatedWork < ActiveRecord::Base
     where("child_works.posted = 1")
   }
 
+  scope :approved -> { where(reciprocal: true) }
+
+  scope :non_approved -> { where(reciprocal: false) }
+
+  scope :translations -> { where(translation: true) }
+
+  scope :remixes -> { where(translation: false) }
+
+  scope :visible_to_all, -> { posted.approved.merge(Work.revealed.non_anon) }
+
   before_validation :set_parent, if: :new_record?
   def set_parent
     return if parent

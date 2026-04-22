@@ -6,33 +6,35 @@ class RelatedWorksController < ApplicationController
 
   def index
     @page_subtitle = t(".page_title", login: @user.login)
-    @translations_of_user = @user.related_works.posted.where(translation: true)
-    @remixes_of_user = @user.related_works.posted.where(translation: false)
-    @translations_by_user = @user.parent_work_relationships.posted.where(translation: true)
-    @remixes_by_user = @user.parent_work_relationships.posted.where(translation: false)
+
+    translations_of_user = @user.related_works.posted.translations
+    remixes_of_user = @user.related_works.posted.remixes
+    translations_by_user = @user.parent_work_relationships.posted.translations
+    remixes_by_user = @user.parent_work_relationships.posted.remixes
+
     @can_access_unapproved_related_works = @user && (@user == current_user || (logged_in_as_admin? && policy(:related_work).access_unapproved?))
 
-    @requests_exist = @user.related_works.posted.where(reciprocal: false).present?
-    @declined_works_exist = @requests_exist || @user.parent_work_relationships.posted.where(reciprocal: false).present?
+    @requests_exist = @user.related_works.posted.non_approved.present?
+    @declined_works_exist = @requests_exist || @user.parent_work_relationships.posted.non_approved.present?
 
     if @can_access_unapproved_related_works && params[:requests] && @requests_exist
-      @translations_of_user = @translations_of_user.where(reciprocal: false)
-      @remixes_of_user = @remixes_of_user.where(reciprocal: false)
+      @translations_of_user = translations_of_user.non_approved
+      @remixes_of_user = remixes_of_user.non_approved
     elsif @can_access_unapproved_related_works && params[:declined]
-      @translations_of_user = @translations_of_user.where(reciprocal: false)
-      @remixes_of_user = @remixes_of_user.where(reciprocal: false)
-      @translations_by_user = @translations_by_user.where(reciprocal: false)
-      @remixes_by_user = @remixes_by_user.where(reciprocal: false)
+      @translations_of_user = translations_of_user.non_approved
+      @remixes_of_user = remixes_of_user.non_approved
+      @translations_by_user = translations_by_user.non_approved
+      @remixes_by_user = remixes_by_user.non_approved
     elsif @can_access_unapproved_related_works
-      @translations_of_user = @translations_of_user.where(reciprocal: true)
-      @remixes_of_user = @remixes_of_user.where(reciprocal: true)
-      @translations_by_user = @translations_by_user.where(reciprocal: true)
-      @remixes_by_user = @remixes_by_user.where(reciprocal: true)
+      @translations_of_user = translations_of_user.approved
+      @remixes_of_user = remixes_of_user.approved
+      @translations_by_user = translations_by_user.approved
+      @remixes_by_user = remixes_by_user.approved
     else
-      @translations_of_user = @translations_of_user.merge(Work.revealed.non_anon).where(reciprocal: true)
-      @remixes_of_user = @remixes_of_user.merge(Work.revealed.non_anon).where(reciprocal: true)
-      @translations_by_user = @translations_by_user.merge(Work.revealed.non_anon).where(reciprocal: true)
-      @remixes_by_user = @remixes_by_user.merge(Work.revealed.non_anon).where(reciprocal: true)
+      @translations_of_user = translations_of_user.visible_to_all
+      @remixes_of_user = remixes_of_user.visible_to_all
+      @translations_by_user = translations_by_user.visible_to_all
+      @remixes_by_user = remixes_by_user.visible_to_all
     end
   end
 
